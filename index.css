@@ -1132,7 +1132,184 @@
 
 @media only screen and (max-width: 1200px) {
   
+.credit-score-section {
+  margin: 100px auto;
+  width: 100%;
+  box-sizing: border-box;
 }
+
+.credit-score-div-1 {
+  width: 80%;
+}
+
+.credit-score-img{
+  width: 100%;
+}
+
+.credit-score-h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.credit-score-h6 {
+  color: #808080;
+  font-size: 11px;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+.credit-score-inner-div {
+  margin-top: 15px;
+}
+
+.credit-score-inner-h5 {
+  color: #4d4d4d;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.credit-score-inner-p {
+  color: #808080;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.credit-score-btn {
+  border: none;
+  outline: none;
+  border-radius: 21.1px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+  padding: 7px 20px;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+}
+
+
+@media only screen and (max-width: 992px) {
+  
+.credit-score-section {
+  margin: 100px auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.credit-score-div-1 {
+  width: 80%;
+}
+
+.credit-score-img{
+  width: 100%;
+}
+
+.credit-score-h2 {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.credit-score-h6 {
+  color: #808080;
+  font-size: 9px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.credit-score-inner-div {
+  margin-top: 15px;
+}
+
+.credit-score-inner-h5 {
+  color: #4d4d4d;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.credit-score-inner-p {
+  color: #808080;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.credit-score-btn {
+  border: none;
+  outline: none;
+  border-radius: 21.1px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+  padding: 7px 15px;
+  color: white;
+  font-size: 9px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  
+.credit-score-section {
+  margin: 100px auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.credit-score-div-1 {
+  width: 80%;
+}
+
+.credit-score-img{
+  width: 100%;
+}
+
+.credit-score-h2 {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.credit-score-h6 {
+  color: #808080;
+  font-size: 9px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.credit-score-inner-div {
+  margin-top: 15px;
+}
+
+.credit-score-inner-h5 {
+  color: #4d4d4d;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.credit-score-inner-p {
+  color: #808080;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.credit-score-btn {
+  border: none;
+  outline: none;
+  border-radius: 21.1px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+  padding: 7px 15px;
+  color: white;
+  font-size: 9px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+}
+
 
 /*------------------------------------ end credit score section --------------------------------- */
 
