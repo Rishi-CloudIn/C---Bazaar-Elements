@@ -325,11 +325,11 @@
 
 /* ----------------------------------------approve section ----------------------------------*/
 
-.approve-section {
+/* .approve-section {
   position: absolute;
   left: 70%;
   top: 40%;
-}
+} */
 
 .approve-card {
   width: 400px;
@@ -429,4 +429,77 @@
   font-size: 20px;
   margin-left: 5px;
   color: white;
+}
+
+
+
+
+/* -----------------------------------factor section ---------------------------------- */
+
+
+.factor-card {
+  width: 400px;
+  height: 230px;
+  padding: 15.9px 34.4px 18.4px 22.8px;
+  border-radius: 13.7px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.factor-content-div {
+  display: flex;
+}
+
+.factor-icon {
+  color: #20bf55;
+  font-size: 30px;
+  margin-top: 9px;
+}
+
+.factor-text-space {
+  margin-left: 20px;
+}
+
+.factor-h5{
+   font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.factor-h6 {
+  color: #20bf55;
+  padding: 3px 10px 4px 10px;
+  border-radius: 4.8px;
+  background-color: #f1fff5;
+  font-size: 10px;
+  text-align: left;
+  width: fit-content;
+}
+
+.factor-h2{
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.factor-p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.14;
+  text-align: left;
+  color: #757575;
+  margin-left: 10px;
+}
+
+.factor-btn{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.14;
+  text-align: left;
+  color: #20bf55;
+  border: none;
+  background: transparent;
+  margin-top: 20px;
+  margin-left: 10px;
 }
