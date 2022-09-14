@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 
 
 
@@ -428,7 +433,6 @@
   margin-bottom: 0px;
 }
 .approve-btn span {
-  /* margin-top: 2px; */
   font-size: 20px;
   margin-left: 5px;
   color: white;
@@ -509,4 +513,76 @@
   background: transparent;
   margin-top: 20px;
   margin-left: 10px;
+}
+
+
+
+/* loan btn section*/
+
+
+.loan-btn {
+  display: flex;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  padding: 5px 3px 4px 3px;
+  border-radius: 27px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  width: 200px
+}
+
+.loan-btn.active {
+  display: flex;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  padding: 5px 3px 4px 3px;
+  border-radius: 27px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: #f9fffb;
+  width: 200px
+}
+.loan-btn-div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0fff4;
+}
+
+.loan-btn-icon {
+  width: 40px;
+  top: 50%;
+}
+
+.loan-btn-p {
+  color: #707070;
+  font-size: small;
+  font-weight: 600;
+  margin: 0px 10px 2px 20px;
+  text-align: left;
+}
+
+.loan-big-btn-p {
+  color: #707070;
+  font-size: small;
+  font-weight: 600;
+  margin: 0px 10px 0px 20px;
+  text-align: left;
+}
+
+.loan-btn.loan-btn-active .loan-btn-p {
+  color: #707070;
+  font-size: small;
+  font-weight: 700;
+  margin: 0px 10px 2px 20px;
+  text-align: left;
+}
+
+.loan-btn.loan-btn-active .loan-big-btn-p {
+  color: #707070;
+  font-size: small;
+  font-weight: 700;
+  margin: 0px 10px 0px 20px;
+  text-align: left;
 }
