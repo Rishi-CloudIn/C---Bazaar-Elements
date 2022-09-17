@@ -14,3 +14,11 @@ document.querySelectorAll( ".nav-li a" ).forEach( a => a.addEventListener( "clic
   hamburger_menu.classList.remove( "change" );
 } ) );
 
+
+
+
+//  count
+
+
+
+

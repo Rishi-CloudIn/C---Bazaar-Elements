@@ -753,7 +753,7 @@
 
   <!-- -----------------------------credit step card --------------------------------------->
 
-
+<!-- 
   <section class="step-card-section">
     <div class="card step-card" style="width: 18rem;">
       <div class="card-body">
@@ -844,7 +844,34 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+
+
+  <!-- ------------------------------ gauge chart --------------------------------- -->
+
+
+  <div class="gauge-chart-section">
+    <div class="gauge-chart-div">
+      <div class="gauge-chart-img-div">
+        <img src="./Images/gauge.svg" class="gauge-chart-img">
+        <div class="gauge-chart-content">
+          <div class="gauge-chart-icon-div">
+            <div class="gauge-chart-icon-div-1">
+              <img src="./Images/gearGreen.svg" class="gauge-chart-icon">
+            </div>
+            <p class="gauge-chart-p">38</p>
+          </div>
+            <h2 id="gauge-chart-count" class="gauge-chart-h2">789</h2>
+          <h6 class="gauge-chart-h6">EXCELLENT</h6>
+        </div>
+      </div>
+     
+      <button class="gauge-btn">
+        <img src="./Images/gearGreen.svg" class="credit-content-icon">
+        <p class="gauge-p-1">Download Report</p>
+      </button>
+    </div>
+  </div>
 
 
 
@@ -861,8 +888,19 @@
 
 
 
-
-
+<script>
+  let counts=setInterval(updated);
+        let upto=0;
+        function updated(){
+            let count= document.getElementById("gauge-chart-count");
+            count.innerHTML=++upto;
+            if(upto===768)
+            {
+                clearInterval(counts);
+            }
+}
+        
+</script>
 
 
 
