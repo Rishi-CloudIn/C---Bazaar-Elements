@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!-- google fonts -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- font awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+/*----------------------------------------- nav section ------------------------------------------ */
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-radius: 0px 0px 18px 18px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  z-index: 1;
+}
+
+
+.nav-logo {
+  width: 130px;  
+  max-width: 130px;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.nav-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  color: #20bf55;
+  font-weight: 500;
+   border-radius: 7px;
+  background-color: #e6eaef;
+  outline: none;
+  border: none;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+
+/* hover nav */
+
+/* .nav-ul-div {
+} */
+
+.nav-ul.new-ul {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+  max-width: 250px;
+  height: auto;
+  position: absolute;
+  top: 83px;
+  left: 2%;
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  max-width: 250px;
+  top: 83px;
+  left: 2%;
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.nav-active {
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+  transition: 0.5s;
+  display: flex;
+  background-color: #f1fff5;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.nav-ul.new-ul a, .nav-ul a {
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+  transition: 0.5s;
+  display: flex;
+  padding: 3px 5.5px 13px 9.5px;
+  border-radius: 7px;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-p {
+  margin: 10px 0px 0px 20px;
+}
+
+.nav-ul{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.nav-li {
+  margin: 5px;
+  list-style: none;
+}
+
+.nav-icon {
+  color: #20bf55;
+  margin-top: 10px;
+  width: 15px;
+  margin-left: 10px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-radius: 18px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.nav-logo {
+  width: 130px;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.nav-btn {
+  display: none;
+}
+
+
+
+
+}
+
+/*----------------------------------------- end nav section ------------------------------------------ */
+
+
+/*---------------------------------------- footer section ------------------------------------------- */
+
+
+
+.footer-section {
+  background-color: #f8f8fa;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+}
+
+.footer-main-div {
+  padding: 30px 20px;
+}
+
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.footer-input::placeholder{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  border: none;
+  outline: none;
+  width: 150px;
+  max-width: 150px;
+  margin: 10px auto;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-div a:hover {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 13px;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+/* profile */
+
+.profile-icon-content-div {
+  display: flex;
+   background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+   padding: 20px 0px;
+   display: flex;
+   justify-content: center;
+}
+
+.profile-icon-div {
+  width: 30px;
+  margin: 0px 10px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-icon-div i {
+  color: #20bf55;
+  font-size: 17px;
+}
+
+.profile-icon-h6 {
+  color: white;
+  margin-bottom: 0px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 20px 30px;
+}
+
+.footer-policy-h6 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .footer-section {
+    max-width: 1100px !important;
+  }
+  
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  height: 27px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+
+.footer-input::placeholder{
+  font-size: 10px;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  margin: 20px auto;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  width: 80%;
+} 
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+  .footer-section {
+    max-width: 950px !important;
+  }
+  
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  height: 30px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+
+.footer-input::placeholder{
+  font-size: 10px;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  margin: 20px auto;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 9px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  width: 90%;
+} 
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .footer-section {
+    max-width: 700px !important;
+    padding: 30px;
+  }
+
+  .footer-logo-div {
+    margin-left: 20px;
+  }
+  
+  .footer-content-div {
+    margin: 20px 30px;
+  }
+
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  height: 30px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+
+.footer-input::placeholder{
+  font-size: 10px;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  margin: 20px auto;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  width: 90%;
+} 
+
+
+/* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.footer-policy-h6 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 10px;
+  font-weight: 600;
+  color: black;
+}
+}
+
+@media only screen and (max-width: 510px) {
+  /* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+}
+
+.footer-policy-h6 {
+  font-size: 8px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 8px;
+  font-weight: 600;
+  color: black;
+}
+}
+
+@media only screen and (max-width: 398px) {
+  /* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+}
+
+.footer-policy-h6 {
+  font-size: 7px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 7px;
+  font-weight: 600;
+  color: black;
+}
+
+
+/* profile */
+
+.profile-icon-content-div {
+  display: flex;
+   background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+   padding: 20px 0px;
+   display: flex;
+   justify-content: center;
+}
+
+.profile-icon-div {
+  width: 30px;
+  margin: 0px 5px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-icon-div i {
+  color: #20bf55;
+  font-size: 17px;
+}
+
+.profile-icon-h6 {
+  color: white;
+  margin-bottom: 0px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-right: 10px;
+}
+}
+
+
+/*---------------------------------------- end footer section ------------------------------------------- */
+
+
+/* general style */
+
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .small-text-head {
+  font-size: 14px !important;
+}
+
+.small-text {
+  font-size: 12px;
+}
+}
+
+
+
+
+
+
+
+
+  </style>
+
+  <title>C-Bazaar</title>
+</head>
+<body>
+    
+
+  <!-- ------------------------------------------------------------------------- ------------------------------------Header ---------------------------- ------------------------------------------------------------------------------------->
+
+     <header class="container-fluid">
+      <div class="row">
+        <div class="nav-section">
+
+          <div class="nav-scroll">
+
+          <div class="nav-logo-div">
+            <img src="../../Images/logo-1.svg" alt="logo" class="nav-logo">          
+          </div>
+
+<!-- 
+          <div class="nav-button-div">
+            <button class="nav-btn">Log Out</button>
+          </div> -->
+
+<!-- 
+          <div class="hamburger-menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div> -->
+
+<!-- 
+          <div class="nav-ul-div">
+            <ul class="nav-ul" id="nav-ul">
+              <li class="nav-li nav-active">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Credit Report</p>
+                </a>
+              </li>
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Credit Cards</p>
+                </a>
+              </li>
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Loans</p>
+                </a>
+              </li>
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Loans</p>
+                </a>
+              </li>
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Loans</p>
+                </a>
+              </li>
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Loans</p>
+                </a>
+              </li>
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Loans</p>
+                </a>
+              </li>
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Loans</p>
+                </a>
+              </li>
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Loans</p>
+                </a>
+              </li>
+
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Loans</p>
+                </a>
+              </li>
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Loans</p>
+                </a>
+              </li>
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Loans</p>
+                </a>
+              </li>
+              <li class="nav-li">
+                <a href="#">
+                  <img src="./Images/gearGreen.svg" class="nav-icon">
+                  <p class="nav-p">Loans</p>
+                </a>
+              </li>
+
+
+            <div class="quick-content-div">
+              <div class="quick-card">
+                <h6 class="quick-h6">Get a quick call with C-Bazaar</h6>
+                <div class="quick-card-1">
+                  <img src="./Images/gearGreen.svg" class="quick-icon">
+                  <p class="quick-p">9361087223</p>
+                </div>
+                <div class="quick-card-1">
+                  <img src="./Images/gearGreen.svg" class="quick-icon">
+                  <p class="quick-p">abc@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            
+            </ul>
+
+          </div>
+ -->
+
+        </div>
+      </div>
+      </div>
+
+    </header>
+
+
+
+  <!-- ------------------------------------------------------------------------- ------------------------------------ body section ---------------------------- ------------------------------------------------------------------------------------->
+
+  <section class="container">
+    <div class="credit-cart-report px-sm-0 px-3">
+      <h2 class="h2 fw-bold mt-5 mb-2">Credit Card - Compare & Apply Credit Cards Online</h2>
+      <p class="text">Apply for a wide range of Credit Cards on Credit Bazaar starting at 0 annual fees, offering many benefits such as shopping rewards, cashback, & discounts.
+      </p>
+      
+
+      <!-- --------Top Credit Cards-------- -->
+
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">Top Credit Cards</h5>
+      <h6 class="text">Updated on - 24 Aug 2022</h6>
+      <p class="fs-6">Since there are many categories of credit cards, it may be difficult to choose the best credit card for you. Here is a list of the top ten credit cards and is based on the different categories they fall under.
+      </p>
+
+
+      <table class="table table-bordered">
+      <thead class="table-dark ">
+        <tr>
+          <th scope="col">Credit Card</th>
+          <th scope="col">Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="h6"><a href="#">RBL Bank Credit Bazaar SaveMax Co-branded Credit Card</a></td>
+          <td>Reward Points</td>
+        </tr>
+         <tr>
+          <td class="h6"><a href="#">FinBooster: YES BANK – Credit Bazaar Co-branded Credit Card</a></td>
+          <td>Reward Points</td>
+        </tr>
+         <tr>
+          <td class="h6"><a href="#">IndusInd Platinum Card</a></td>
+          <td>Fee Waiver</td>
+        </tr>
+         <tr>
+          <td class="h6"><a href="#">IndusInd Platinum Aura Edge Visa Card</a></td>
+          <td>Lifestyle</td>
+        </tr>
+         <tr>
+          <td class="h6"><a href="#">Citi Cash Back Credit Card</a></td>
+          <td>Cash Back</td>
+        </tr>
+         <tr>
+          <td class="h6"><a href="#">Citi Rewards Card</a></td>
+          <td>Rewards</td>
+        </tr>
+         <tr>
+          <td class="h6"><a href="#">IndianOil Citi Credit Card</a></td>
+          <td>Fuel</td>
+        </tr>
+         <tr>
+          <td class="h6"><a href="#">HDFC Diners ClubMiles Card</a></td>
+          <td>Lounge Access</td>
+        </tr>
+         <tr>
+          <td class="h6"><a href="#">HDFC Freedom Card</a></td>
+          <td>Reward Points</td>
+        </tr>
+         <tr>
+          <td class="h6"><a href="#">Axis Bank Neo Credit Card</a></td>
+          <td>Shopping and Movies</td>
+        </tr>
+         <tr>
+          <td class="h6"><a href="#">HSBC Platinum Credit Card</a></td>
+          <td>Travel and Dining</td>
+        </tr>
+         <tr>
+          <td class="h6"><a href="#">Kotak PVR Gold Credit Card</a></td>
+          <td>Movies</td>
+        </tr>
+      </tbody>
+      </table>
+
+
+      <!-- --------Different Types of Credit Cards in India-------- -->
+
+      <h5 class="h4 fw-bolder mt-4 mb-0">Different Types of Credit Cards in India</h5>
+      <ul>
+        <li class="mt-3"><a href="#">Shopping Credit Cards</a></li>
+        <li class="mt-2"><a href="#">LifeStyle Credit Cards</a></li>
+        <li class="mt-2"><a href="#">Fuel Credit Cards</a></li>
+        <li class="mt-2"><a href="#">Rewards Credit Cards</a></li>
+        <li class="mt-2"><a href="#">Cashback Credit Cards</a></li>
+        <li class="mt-2"><a href="#">Travel Credit Cards</a></li>
+      </ul>
+      
+
+      <!-- --------Features & Benefits of a Credit Card-------- -->
+
+
+      <h4 class="h4 fw-bolder my-4">Features & Benefits of a Credit Card</h4>
+       <table class="table table-bordered">
+        <tbody>
+        <tr>
+          <td class="h6 col-3">Welcome Gift</td>
+          <td class="col-9">Many banks offer a welcome gift to new credit card applicants once the card is issued to them in the form of bonus reward points, vouchers, discounts, etc.</td>
+        </tr>
+        <tr>
+          <td class="h6 col-3">Rewards Program</td>
+          <td class="col-9">All credit cards generally have a reward program, which allows cardholders to earn reward points on every transaction they make using their cards.</td>
+        </tr>
+        <tr>
+          <td class="h6 col-3">Fuel Surcharge Waiver</td>
+          <td class="col-9">Banks offer a fuel surcharge waiver to the cardholders on spending a specific amount of money on fuel every month.</td>
+        </tr>
+        <tr>
+          <td class="h6 col-3">Cashback Benefits</td>
+          <td class="col-9">Many credit cards offer cash back benefits to the customers.</td>
+        </tr>
+        
+        <tr>
+          <td class="h6 col-3">Lifestyle Benefits</td>
+          <td class="col-9">Cardholders can enjoy various lifestyle benefits on their credit cards such as offers on dining, shopping, wellness, entertainment, etc.</td>
+        </tr>
+        <tr>
+          <td class="h6 col-3">Travel Benefits</td>
+          <td class="col-9">Travel benefits of credit cards include air miles, airport lounge access, travel insurance, airline offers, hotel offers, etc.</td>
+        </tr>
+        <tr>
+          <td class="h6 col-3">Airport Lounge Access</td>
+          <td class="col-9">Some credit cards offer complimentary airport lounge access to the cardholders. The offer varies from one bank to another.</td>
+        </tr>
+        <tr>
+          <td class="h6 col-3">Add-on Cards</td>
+          <td class="col-9">Many banks allow their credit cardholders to apply for add-on credit cards for their immediate family members.</td>
+        </tr>
+        <tr>
+          <td class="h6 col-3">Insurance Coverage</td>
+          <td class="col-9">Some premier cards provide a comprehensive insurance policy that provides coverage against air accidents, life, lost baggage, lost card, outstanding, etc.</td>
+        </tr>
+         <tr>
+          <td class="h6 col-3">Balance Transfer</td>
+          <td class="col-9">Credit cardholders can transfer the outstanding balance of their existing cards issued by one bank to the credit card account of another bank.</td>
+        </tr>
+         <tr>
+          <td class="h6 col-3">Global Acceptance</td>
+          <td class="col-9">Today, most credit cards that are issued in India are international credit cards and are accepted by various merchants all over the world.</td>
+        </tr>
+         <tr>
+          <td class="h6 col-3">EMI Conversion</td>
+          <td class="col-9">The feature allows the credit card members to convert their credit card transactions into easy monthly installments (EMIs).</td>
+        </tr>
+         <tr>
+          <td class="h6 col-3">Credit Score</td>
+          <td class="col-9">Owning a credit card helps you build a healthy CIBIL score. By making timely payments on your card and in full, you receive a positive credit score from the credit bureau, CIBIL.</td>
+        </tr>
+         
+      </tbody>
+      </table>
+
+
+      <!-- --------Credit Card Eligibility-------- -->
+
+      <h5 class="h4 fw-bolder mt-5">Credit Card Eligibility</h5>
+      <p class="fs-6">The eligibility criteria of a credit card are dependent on a range of factors. Check out the primary eligibility criteria for credit cards</p>
+    </div>
+
+     <table class="table table-bordered">
+      <thead class="table-dark ">
+        <tr>
+          <th scope="col">Eligibility Criteria</th>
+          <th scope="col">Requirement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="h6 col-5">Nationality</td>
+          <td class="col-7">Indian</td>
+        </tr>
+         <tr>
+          <td class="h6">Age</td>
+          <td>18 years</td>
+        </tr>
+       <tr>
+          <td class="h6">Employment status</td>
+          <td>Salaried or Self-employed</td>
+        </tr>
+        <tr>
+          <td class="h6">Income</td>
+          <td>18 Depends on one bank to the other</td>
+        </tr>
+        <tr>
+          <td class="h6">Credit Score</td>
+          <td>Good credit score (700 and above)</td>
+        </tr>
+      </tbody>
+      </table>
+
+
+
+      <!-- --------Documents Required to Apply for a Credit Card-------- -->
+
+
+       <h5 class="h4 fw-bolder mt-5">Documents Required to Apply for a Credit Card</h5>
+      <p class="fs-6">Applicants can submit any one of the ID proof, address proof, and income proof documents listed below.</p>
+
+     <table class="table table-bordered">
+      <thead class="table-dark ">
+        <tr>
+          <th scope="col-2" class="small-text-head">Requirements</th>
+          <th scope="col-5" class="small-text-head">Salaried Individuals</th>
+          <th scope="col-5" class="small-text-head">Self Employed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-2 small-text">ID Proof</td>
+          <td class="col-5 small-text">Passport, Permanent Account Number (PAN) card, Aadhaar card, Voter’s ID</td>
+          <td class="col-5 small-text">Passport, PAN card, Aadhaar card, Voter’s ID</td>
+        </tr>
+        <tr>
+          <td class="col-2 small-text">Residential Proof</td>
+          <td class="col-5 small-text">Aadhaar Card, Electricity Bill, Telephone bill</td>
+          <td class="col-5 small-text">Aadhaar Card, Electricity Bill, Telephone bill</td>
+        </tr>
+        <tr>
+          <td class="col-2 small-text">Income Proof</td>
+          <td class="col-5 small-text">Salary Certificate, Recent Salary slips, Employment Offer Letter</td>
+          <td class="col-5 small-text">Certified Financials, Recent Income Tax Returns (ITR) Statement, Passport</td>
+        </tr>
+        
+      </tbody>
+      </table>
+
+
+      <!-- --------Which is the Best Credit Card for You?-------- -->
+
+
+       <h5 class="h4 fw-bolder mt-5">Which is the Best Credit Card for You?</h5>
+        <ul>
+          <li class="mt-4"><span class="fw-bolder">Your spending pattern : </span> Your monthly spending pattern is a significant factor in choosing the right credit card.</li>
+          <li class="mt-3"><span class="fw-bolder">The reward type : </span> Credit cards offer rewards in terms of cashback, rewards points & air miles.</li>
+          <li class="mt-3"><span class="fw-bolder">Fees and charges : </span>Compare the interest rate on different cards and the fees and charges that apply.</li>
+          <li class="mt-3"><span class="fw-bolder">Offers on the card : </span>Some cards have great offers and discounts when you use them to shop on a particular website or when you use it in a specific store.</li>
+          <li class="mt-3"><span class="fw-bolder">Welcome bonus or gift : </span> Some banks offer welcome gifts and joining bonuses on applying for a credit card. Gifts could be the latest gadget or bonus points and miles.</li>
+          <li class="mt-3"><span class="fw-bolder">Payment options : </span>Most cards will allow you to make payments via multiple channels.</li>
+        </ul>
+
+      <!-- --------How to Apply for a Credit Card?-------- -->
+
+
+       <h5 class="h4 fw-bolder mt-5">How to Apply for a Credit Card?</h5>
+        <p class="fs-6">You can apply for a credit card, both online and offline. Due to the COVID-19 pandemic, the credit card application process has been digitized, making it simpler and faster.
+      </p>
+
+      <!-- --------The Process to Apply for a Credit Card Online-------- -->
+
+      <h5 class="h4 fw-bolder mt-5">The Process to Apply for a Credit Card Online</h5>
+      <p class="fs-6">You can Compare & Apply for a Credit Card on Credit Bazaar by Following 4 Simple Steps:</p>
+        <ul>
+          <li class="mt-4"><span class="fw-bolder">Step 1 : </span> Compare credit card offers.</li>
+          <li class="mt-3"><span class="fw-bolder">Step 2 : </span> Select from the top cards offered by leading Indian banks.</li>
+          <li class="mt-3"><span class="fw-bolder">Step 3 : </span>Check your eligibility by entering a few personal details.</li>
+          <li class="mt-3"><span class="fw-bolder">Step 4 : </span> Enjoy instant approval online after filling out your application form. Alternately, you can also apply for a card online on the bank’s website by following these steps : </li>
+         <ul>
+            <li class="mt-3"><span class="fw-bolder">Step 1: </span>Visit the bank's website.</li>
+            <li class="mt-3"><span class="fw-bolder">Step 2: </span> Explore the cards offered by the bank.</li>
+            <li class="mt-3"><span class="fw-bolder">Step 3: </span>Use the comparison tool if available to compare their features and benefits</li>
+            <li class="mt-3"><span class="fw-bolder">Step 4: </span>Select the card that is the right one for you and hit the 'Apply' button.</li>
+            <li class="mt-3"><span class="fw-bolder">Step 5: </span>Fill in the required details and upload all necessary documents.</li>
+            <li class="mt-3"><span class="fw-bolder">Step 6: </span>Submit your form.</li>
+         </ul>
+         <p class="text mt-2">Note : Each bank may have a different application procedure. Visit the bank's website for more details regarding how to apply for their card online.</p>
+        </ul>
+
+      <!-- --------Benefits of Applying for Credit Card on Credit Bazaar-------- -->
+
+      <h5 class="h4 fw-bolder mt-5">Benefits of Applying for Credit Card on Credit Bazaar</h5>
+      <p class="text">Credit Bazaar offers an end-to-end application process, wherein you can browse through most of the credit cards offered by various banks, compare and apply for the <a href="#">best credit card</a> in just a few clicks.</p>
+      <h6 class="h6 fw-bolder mt-2">Let's look at the perks that we offer for applying for a credit card through us.</h6>
+      <ul>
+          <li class="mt-4">Compare from a range of many credit cards.</li>
+          <li class="mt-3">A simple application process.</li>
+          <li class="mt-3">24x7 Customer Support.</li>
+      </ul>
+
+
+      <!-- --------How to Use a Credit Card?-------- -->
+
+
+      <h5 class="h4 fw-bolder mt-5">How to Use a Credit Card?</h5>
+      <p class="text">The following are some of the important tips on how to use a credit card:</p>
+
+      <ul>
+          <li class="mt-4">
+            <h6 class="fs-6 fw-bolder">Use the right card for the right purchase</h6>
+            <p class="fs-6">If you have more than one credit card, ensure you are using the right one based on your needs. For instance, use a travel credit card if you spend a considerable part of your income on travel such as booking flight tickets, hotels, and more. This way you can earn reward points.</p>
+          </li>
+          <li class="mb-2">
+            <h6 class="fs-6 fw-bolder">Pay the bills into EMIs</h6>
+            <p class="fs-6">One of the best ways to use credit cards is converting your purchases into EMIs and repaying the bills as per your convenience.</p>
+          </li>
+          <li class="mb-2">
+            <h6 class="fs-6 fw-bolder">Opt for a personal loan during emergencies</h6>
+            <p class="fs-6">Many lenders allow its credit card users to convert their unutilized credit limits into <a href="#">personal loans</a> at a nominal interest. This helps credit card users to meet their urgent needs in no time.</p>
+          </li>
+          <li class="mb-2">
+            <h6 class="fs-6 fw-bolder">Shop online using reward points</h6>
+            <p class="fs-6">Credit cards offer 2x reward points when you purchase online.</p>
+          </li>
+          <li class="mb-2">
+            <h6 class="fs-6 fw-bolder">Redeem your reward points</h6>
+            <p class="fs-6">Banks allow its credit card users to redeem their reward points to get discounts on hotel bookings, flight tickets, etc. These reward points provide exclusive shopping vouchers, cashbacks and recharge vouchers to the users.</p>
+          </li>         
+      </ul>
+
+
+      <!-- --------Tips for Using Contactless Credit Cards-------- -->
+
+      <h5 class="h4 fw-bolder mt-5 text-center"><u>Apply for Credit Cards</u></h5>
+
+
+      <h5 class="h4 fw-bolder mt-5">Tips for Using Contactless Credit Cards</h5>
+       <ul>
+          <li class="mt-4">
+            Always keep a check on the breakdown of all your contactless payments. This way, you can keep track of all your transactions and escalate any unusual activity.
+          </li>
+         <li class="mb-2">
+            If you need to initiate the payment on your own, make sure to hold the credit card flat on the payment area or the terminal.
+          </li>
+         <li class="mb-2">
+           Try to keep your contactless credit card in your wallet at all times. Most contactless credit cards do not require you to remove it from the wallet.
+          </li>
+         
+      </ul>
+
+
+      <!-- --------Things to Know Before Applying for A Credit Card-------- -->
+
+      <h5 class="h4 fw-bolder mt-5">Things to Know Before Applying for A Credit Card</h5>
+
+      <div class="question-div mt-3">
+        <h6 class="h6">+Transferring Money from Your Credit Card to A Bank Account?</h6>
+      </div>
+
+       <div class="question-div">
+        <h6 class="h6">+How does the Reward Points System Work for a Credit Card?</h6>
+      </div>
+
+       <div class="question-div">
+        <h6 class="h6">+Will the Rejection of Your Credit Card Application Affect Your Credit Score?</h6>
+      </div>
+
+
+      <!-- --------Credit Card Statement-------- -->
+
+
+      <h5 class="h4 fw-bolder mt-5">Credit Card Statement</h5>
+      <ul>
+          <li class="mt-4 mb-2">
+            A <a href="#">Credit card statement</a> or (credit card bill) is generated every 30/31 days. The bill generation date depends on the date on which the card is first issued, and the same date will be followed for the subsequent months.
+          </li>
+         <li class="mb-2">
+            Besides the bill amount which is also called the outstanding amount on the card, the statement also provides a detailed history of all the transactions conducted during the billing period.
+          </li>
+         <li class="mb-2">
+            It also reflects the total credit limit, available credit limit, cash limit, due date, and other related information. The statement is typically mailed to the cardholder’s registered e-mail address every month. However, if the total outstanding balance is less than a certain cut-off, say Rs. 200, no statement will be generated.
+          </li>
+         
+      </ul>
+
+      <!-- --------Credit Card Fraudulent Transactions-------- -->
+
+
+      <h5 class="h4 fw-bolder mt-5">Credit Card Fraudulent Transactions</h5>
+      <p class="fs-6 my-3">Fraudulent credit card transactions are very common in today's world. Through credit card skimming, phishing, and vishing, your credit card information can be stolen and used without your knowledge. You need to be very alert about any suspicious email and calls that you may receive. You have to report any fraudulent credit card transactions to your bank at least within two days of the event from happening. A few banks also allow you to block your credit card online. Keep in mind that with the growing cases of cybercrimes, you need to be very careful as to where and to whom you give your credit card information</p>
+
+      <!-- --------FAQs on Credit Card-------- -->
+
+      <h5 class="h4 fw-bolder mt-5">FAQs on Credit Card</h5>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">1. What is a Credit Card?</h6>
+        <p class="fs-6">Credit cards are an essential financial tool that enables its holders to make purchases and have the luxury of paying back the amount later. A credit card comes with a bank-approved credit limit, and the holder must pay back the amount due on the due date, which is mutually decided by the bank and the holder.</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">2. Can I get a credit card online?</h6>
+        <p class="fs-6">Yes. You can apply for a credit card online, once you go to the website of your preferred bank, or you can conveniently compare options and apply for one on Credit Bazaar.</p>
+      </div>
+
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">3. How can I get a credit card for the first time?</h6>
+        <p class="fs-6">If you already have a credit history, you can check your eligibility, choose a card that suits your lifestyle needs and apply for it on Credit Bazaar. If you do not have a credit history, you can opt for a secure credit card usually offered against fixed deposits.</p>
+      </div>
+      
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">4. How do credit cards work?</h6>
+        <p class="fs-6">A credit card gives you a line of credit and you can use this to make balance transfers, all kinds of purchases, and cash advances. You will have to pay back the amount by the date specified by the bank. When you use a credit card, you have to keep in mind the minimum payment to be made every month by the due date.</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">5. What is the importance of a credit card?</h6>
+        <p class="fs-6">A credit card allows you to make purchases within the credit limit and pay later. One of the main advantages of a credit card is that the total sum of your purchases can be converted into low-cost EMIs and can be repaid over a specified period of time. You can avail discounts, cashback, and reward points on your credit card spending.</p>
+      </div>
+
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">6. What is the credit card limit?</h6>
+        <p class="fs-6">This is the maximum amount that one can spend on their card. When you have a high limit for the credit card, it allows you to spend more and this will help your credit scores.</p>
+      </div>
+
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">7. What is the minimum credit score for a credit card?</h6>
+        <p class="fs-6">A credit score above 750 is ideal to be able to get a credit card.</p>
+      </div>
+      
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">8. Can I get a credit card without a job?</h6>
+        <p class="fs-6">Even if you do not have a job and have a pretty substantial cash inflow into your account every month or so, you are eligible for a credit card.</p>
+      </div>
+
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">9. Can I get a credit card in one day?</h6>
+        <p class="fs-6">Can I get a credit card in one day?</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">10. Do credit cards come with any airport lounge benefits?</h6>
+        <p class="fs-6">Yes. A lot of credit cards come with access to domestic and international lounges at airports.</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">11. Are there any benefits of having a credit card?</h6>
+        <p class="fs-6">Yes. Most credit cards come with a reward point system, where you earn a point every time you spend a said amount of money. You can then redeem these points for vouchers, cashback, or air miles.</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">12. How many credit cards should I have?</h6>
+        <p class="fs-6">The number one should own is not fixed. It depends on your financial ability and your spending behavior. However, ensure to manage all the cards properly.</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">13. Can I get a credit card with a bad credit score?</h6>
+        <p class="fs-6">Credit scores above 750 are generally deemed as good for credit card approvals. Scores below 750 are usually considered poor, and approval may be subject to providing security (collateral such as fixed deposits).</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">14. Which is the best and easiest way to apply for a credit card?</h6>
+        <p class="fs-6">The best and the easiest way to get a credit card is to apply for it on a platform like Credit Bazaar. You can compare the features, benefits, fees, interest rates etc. and then choose a card that best suits your needs.</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">15. Should I pay interest on all the purchases I make using a credit card?</h6>
+        <p class="fs-6">No. You don't have to pay interest on all the transactions. However, if you're not repaying the due amount within the stipulated time, the unpaid due would attract interest along with all the new transactions, till the due amount is repaid in full.</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">16. What does 'minimum due' mean on a credit card statement?</h6>
+        <p class="fs-6">The minimum amount due is the minimum amount a credit cardholder needs to pay in case he/she is not able to pay the total outstanding. It is typically 5% of the total outstanding amount on the card.</p>
+      </div>
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">17. Do I need to pay a processing fee for a loan against a credit card?</h6>
+        <p class="fs-6">Yes. Banks do charge processing fees for loans against credit cards. However, you need to pay a very nominal amount as a processing fee.</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">18. How many days will it take for a Credit Card to be renewed?</h6>
+        <p class="fs-6">Credit cards are automatically renewed towards the end of the expiration period. A renewed card with a new expiration date is usually a month before the existing card's expiration.</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">19. How long are Credit Cards usually valid?</h6>
+        <p class="fs-6">Credit cards issued in India are usually valid for a period of 3 years.</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">20. Does my credit card number change when I renew?</h6>
+        <p class="fs-6">The renewed card usually has the same number as your expired card, but the new card's CVV (Card Verification Value) number is different.</p>
+      </div>
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">21. Can I use my credit card in other countries?</h6>
+        <p class="fs-6">It depends on your card type. If your credit card is accepted globally, you can use it in other countries as mentioned by your card issuer. However, a certain fee known as the foreign transaction fee will be charged for all the purchases made abroad.</p>
+      </div>
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">22. If I make a late payment on my credit card, will it affect my credit score?</h6>
+        <p class="fs-6">It depends on various factors - the number of days late, the number of instances and the amount due. Based on all this your credit card issuer would take a call about whether or not to report the same to the credit agencies.</p>
+      </div>
+      
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">23. Can a credit card be reopened once it is closed?</h6>
+        <p class="fs-6">Yes, you can always reopen a credit card account if it is closed. How long ago you closed the credit card account will be taken into consideration by the credit card issuer. However, keep in mind that there is no guarantee that the issuer will allow you to reopen the account.</p>
+      </div>
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">24. Do I have to pay the bill if I don't use my credit card?</h6>
+        <p class="fs-6">Almost all credit card issuers will not charge you any fee if your credit card hasn't been used for months. It is unlikely that they will charge you an inactivity or dormant account fee. Inactivity fee is generally charged on deposit accounts, but this will depend on the credit card issuer.</p>
+      </div>
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">25. Do I need to use my credit card every month?</h6>
+        <p class="fs-6">You do not have to use your credit card every month, but you need to use it often to avoid the bank from labeling it as an inactive account.</p>
+      </div>
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">26. What are the charges for withdrawing cash using my credit card?</h6>
+        <p class="fs-6">Different banks will charge different fees. Typically, the charge will range from 2.5% to 3% of your transaction amount. This will be subject to a minimum amount of Rs.250 to Rs.500.</p>
+      </div>
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">27. What should I do when my credit card is lost?</h6>
+        <p class="fs-6">When you lose your credit card, you need to notify the bank immediately and they will block your account.</p>
+      </div>
+
+       <div class="mt-4">
+        <h6 class="h6 fw-bolder">28. What are the four types of credit cards?</h6>
+        <p class="fs-6">The four major credit card networks are American Express (Amex), Discover, Mastercard, and Visa.</p>
+      </div>
+      
+
+       <div class="mt-4">
+        <h6 class="h6 fw-bolder">29. Can I use my credit card at an Automated Teller Machine (ATM) without a PIN?</h6>
+        <p class="fs-6">Yes, you can use your credit card without a PIN. A PIN is required if you plan to use the card for cash advances at ATMs.</p>
+      </div>
+      
+
+       <div class="mt-4">
+        <h6 class="h6 fw-bolder">30. Can I get a credit card without a credit score?</h6>
+        <p class="fs-6">Yes, you can always get a credit card without having a credit score. However, the bank will charge a higher fee. Usually, banks accept a CIBIL score in the range of 700-750 and above to issue a credit card.</p>
+      </div>
+      
+       <div class="mt-4">
+        <h6 class="h6 fw-bolder">31. How do you use a credit card at an ATM?</h6>
+        <p class="fs-6">This process is also known as cash advance. The maximum amount that you withdraw from an ATM using your credit card will be set by the bank. Keep in mind that this is generally capped at up to 30% to 40% of your credit card limit.</p>
+      </div>
+      
+       <div class="mt-4">
+        <h6 class="h6 fw-bolder">32. What are the minimum age criteria to apply for a credit card?</h6>
+        <p class="fs-6">You must be at least 18 years old to apply for a credit card.</p>
+      </div>
+      
+       <div class="mt-4">
+        <h6 class="h6 fw-bolder">33. In case I apply for a credit card online, how long will the approval process take?</h6>
+        <p class="fs-6">In case you apply for a credit card online, the approval process may be completed within a day.</p>
+      </div>
+      
+       <div class="mt-4">
+        <h6 class="h6 fw-bolder">34. Do international credit cards work in India?</h6>
+        <p class="fs-6">You can use international credit cards in India if the service is available by the bank. You can always contact the bank to know more about using your international credit cards in India.</p>
+      </div>
+
+        <div class="mt-4">
+        <h6 class="h6 fw-bolder">35. Can I set a transaction limit in my credit card?</h6>
+        <p class="fs-6">Yes. You can set a transaction limit for your credit card. You will have to contact the bank credit card customer care to set the limit.</p>
+      </div>
+      
+
+        <div class="mt-4">
+        <h6 class="h6 fw-bolder">36. How do I reach credit card customer care?</h6>
+        <p class="fs-6">You can reach the credit card customer care of a bank by calling their customer care number or by writing to the customer care email ID.</p>
+      </div>
+      
+
+        <div class="mt-4">
+        <h6 class="h6 fw-bolder">37. How to disable or enable international transactions?</h6>
+        <p class="fs-6">You can easily disable or enable international transactions either by contacting the bank customer care or via online methods - the website or the bank app.</p>
+      </div>
+      
+        <div class="mt-4">
+        <h6 class="h6 fw-bolder">38. How to change contact details for credit cards?</h6>
+        <p class="fs-6">You will have to submit a form to change the phone number of your credit card. For some banks you can change your number online and for a few banks you will have to visit the bank.</p>
+      </div>
+      
+        <div class="mt-4">
+        <h6 class="h6 fw-bolder">39. How do Europay, MasterCard, and Visa (EMV) Chip Cards Work?</h6>
+        <p class="fs-6">An EMV chip credit card works with all payment acceptance devices. These have to be certified and compliant with EMV chip-and-PIN standards. When a transaction is made, you will insert the card into the terminal and the card reader and the chip will communicate and authenticate your transaction.</p>
+      </div>
+      
+
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">40. How does the card issuer decide my credit limit?</h6>
+        <p class="fs-6">The credit card issuer will decide the credit limit for your credit card by looking into a lot of factors like your repayment history, credit score, etc.</p>
+      </div>
+
+       <div class="mt-4">
+        <h6 class="h6 fw-bolder">41. Does credit card charge apply for international purchases?</h6>
+        <p class="fs-6">Yes, the bank can charge between 1% and 4% for an international transaction.</p>
+      </div>
+
+       <div class="mt-4">
+        <h6 class="h6 fw-bolder">42. What is a credit card protection plan (CPP)?</h6>
+        <p class="fs-6">A CPP is a service which will protect your credit card from loss, theft, fraud, etc.</p>
+      </div>
+      
+       <div class="mt-4">
+        <h6 class="h6 fw-bolder">43. Can you pay your credit card bill with another credit card?</h6>
+        <p class="fs-6">Yes, you can pay your credit card bill with another credit card.</p>
+      </div>
+
+       <div class="mt-4">
+        <h6 class="h6 fw-bolder">44. What happens to my credit card liability after death?</h6>
+        <p class="fs-6">When you die, the payment of the remaining bills have to be made by the legal heir.</p>
+      </div>
+      
+      <div class="mt-4">
+        <h6 class="h6 fw-bolder">45. How to add credit card details in Amazon App?</h6>
+        <p class="fs-6">Once you log into the app, you should click on ‘Edit Account Settings'. Now you can add, or delete any card by clicking on it.</p>
+      </div>
+      
+      
+      
+      
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+  <!-- ------------------------------------------------------------------------- ------------------------------------footer ---------------------------- ------------------------------------------------------------------------------------->
+
+<!-- 
+  <section class="footer-section container-fluid" style="padding: 0px; margin: 0px; width: 100%;">
+
+  <div class="footer-main-div">
+    <div class="row" >
+      <div class="col-md-2 col-12">
+        <div class="footer-logo-div">
+          <img src="../../Images/logo-1.svg" class="footer-logo">
+        </div>
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Credit Card</h4>
+          <a href="#"><p class="footer-content-p mt-4">Best Credit Cards</p></a>
+          <a href="#"><p class="footer-content-p">Check your Credit Score</p></a>
+          <a href="#"><p class="footer-content-p">Cibil</p></a>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Loan</h4>
+          <a href="#"><p class="footer-content-p mt-4">Personal Loan</p></a>
+          <a href="#"><p class="footer-content-p">Home Loan</p></a>
+          <a href="#"><p class="footer-content-p">Educational Loan</p></a>
+          <a href="#"><p class="footer-content-p">Business Loan</p></a>
+          <a href="#"><p class="footer-content-p">Vehicle Loan</p></a>
+          <a href="#"><p class="footer-content-p">Gold Loan</p></a>
+        </div>  
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Insurance</h4>
+          <a href="#"><p class="footer-content-p mt-4">Life Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Home Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Health Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Vehicle Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Property Insurance</p></a>
+        </div>  
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Investment</h4>
+          <a href="#"><p class="footer-content-p mt-4">Mutual Funds</p></a>
+          <a href="#"><p class="footer-content-p">Fixed Deposit</p></a>
+          <a href="#"><p class="footer-content-p">Recurring Deposit</p></a>
+          <a href="#"><p class="footer-content-p">Demat & Trading</p></a>
+          <a href="#"><p class="footer-content-p">Government Schemes</p></a>
+        </div>  
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Subscribe Newsletter</h5>
+            <div class="footer-div-form mt-4">
+              <input type="text" class="footer-input" placeholder="Enter Your Email">
+              <button class="footer-btn">Get Start</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <div class="profile-icon-section">
+      <div class="profile-icon-content-div">
+        <h6 class="profile-icon-h6">Follow Us :</h6>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-facebook-f "></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div class="footer-policy-section">
+      <div class="footer-policy-div">
+        <h6 class="footer-policy-h6">Copyright &#169;  2022 Cloudin Software Tech Labs</h6>
+      </div>
+      <div class="footer-policy-div">
+        <h6 class="footer-policy-h6">
+          Designed by <span class="footer-policy-span">Cloudin Software Tech Labs</span>
+        </h6>
+      </div>
+    </div>
+  </section>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

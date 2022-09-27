@@ -1,5 +1,4 @@
 
-
 const hamburger_menu = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector(".nav-ul");
 
@@ -15,19 +14,3 @@ document.querySelectorAll( ".nav-li a" ).forEach( a => a.addEventListener( "clic
 } ) );
 
 
-
-
-//  count
-
-
-
-
-
-
-// const credit = [
-//   { name: 'payment history', value: 'paymentHistory' },
-//   { name: 'credit card utilization', value: 'creditCardUtilization' },
-//   { name: 'credit history', value: 'creditHistory' },
-//   { name: 'total accounts', value: 'totalAccounts' },
-//   { name: 'credit enquiries', value: 'creditEnquiries' },
-// ]
