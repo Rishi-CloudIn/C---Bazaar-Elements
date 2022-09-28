@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!-- google fonts -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- font awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+/*----------------------------------------- nav section ------------------------------------------ */
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-radius: 0px 0px 18px 18px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+}
+
+
+.nav-logo {
+  width: 130px;  
+  max-width: 130px;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.nav-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  color: #20bf55;
+  font-weight: 500;
+   border-radius: 7px;
+  background-color: #e6eaef;
+  outline: none;
+  border: none;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+
+/* hover nav */
+
+/* .nav-ul-div {
+} */
+
+.nav-ul.new-ul {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+  max-width: 250px;
+  height: auto;
+  position: absolute;
+  top: 83px;
+  left: 2%;
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  max-width: 250px;
+  top: 83px;
+  left: 2%;
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.nav-active {
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+  transition: 0.5s;
+  display: flex;
+  background-color: #f1fff5;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.nav-ul.new-ul a, .nav-ul a {
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+  transition: 0.5s;
+  display: flex;
+  padding: 3px 5.5px 13px 9.5px;
+  border-radius: 7px;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-p {
+  margin: 10px 0px 0px 20px;
+}
+
+.nav-ul{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.nav-li {
+  margin: 5px;
+  list-style: none;
+}
+
+.nav-icon {
+  color: #20bf55;
+  margin-top: 10px;
+  width: 15px;
+  margin-left: 10px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-radius: 18px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.nav-logo {
+  width: 130px;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.nav-btn {
+  display: none;
+}
+
+
+
+
+}
+
+/*----------------------------------------- end nav section ------------------------------------------ */
+
+
+/*---------------------------------------- footer section ------------------------------------------- */
+
+
+
+.footer-section {
+  background-color: #f8f8fa;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+}
+
+.footer-main-div {
+  padding: 30px 20px;
+}
+
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.footer-input::placeholder{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  border: none;
+  outline: none;
+  width: 150px;
+  max-width: 150px;
+  margin: 10px auto;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-div a:hover {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 13px;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+/* profile */
+
+.profile-icon-content-div {
+  display: flex;
+   background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+   padding: 20px 0px;
+   display: flex;
+   justify-content: center;
+}
+
+.profile-icon-div {
+  width: 30px;
+  margin: 0px 10px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-icon-div i {
+  color: #20bf55;
+  font-size: 17px;
+}
+
+.profile-icon-h6 {
+  color: white;
+  margin-bottom: 0px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 20px 30px;
+}
+
+.footer-policy-h6 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .footer-section {
+    max-width: 1100px !important;
+  }
+  
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  height: 27px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+
+.footer-input::placeholder{
+  font-size: 10px;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  margin: 20px auto;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  width: 80%;
+} 
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+  .footer-section {
+    max-width: 950px !important;
+  }
+  
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  height: 30px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+
+.footer-input::placeholder{
+  font-size: 10px;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  margin: 20px auto;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 9px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  width: 90%;
+} 
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .footer-section {
+    max-width: 700px !important;
+    padding: 30px;
+  }
+
+  .footer-logo-div {
+    margin-left: 20px;
+  }
+  
+  .footer-content-div {
+    margin: 20px 30px;
+  }
+
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  height: 30px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+
+.footer-input::placeholder{
+  font-size: 10px;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  margin: 20px auto;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  width: 90%;
+} 
+
+
+/* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.footer-policy-h6 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 10px;
+  font-weight: 600;
+  color: black;
+}
+}
+
+@media only screen and (max-width: 510px) {
+  /* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+}
+
+.footer-policy-h6 {
+  font-size: 8px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 8px;
+  font-weight: 600;
+  color: black;
+}
+}
+
+@media only screen and (max-width: 398px) {
+  /* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+}
+
+.footer-policy-h6 {
+  font-size: 7px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 7px;
+  font-weight: 600;
+  color: black;
+}
+
+
+/* profile */
+
+.profile-icon-content-div {
+  display: flex;
+   background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+   padding: 20px 0px;
+   display: flex;
+   justify-content: center;
+}
+
+.profile-icon-div {
+  width: 30px;
+  margin: 0px 5px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-icon-div i {
+  color: #20bf55;
+  font-size: 17px;
+}
+
+.profile-icon-h6 {
+  color: white;
+  margin-bottom: 0px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+}
+
+
+/*---------------------------------------- end footer section ------------------------------------------- */
+
+
+/* general style */
+
+
+a {
+  text-decoration: none;
+}
+
+/* collapsible */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: rgb(108, 108, 108);
+  color: #fff;
+  height: auto;
+  cursor: pointer;
+  padding: 7px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+
+.active, .collapsible:hover {
+  background-color: rgb(108, 108, 108);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  border: 2px solid black;
+  color: black;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .small-text-head-1 {
+  font-size: 10px !important;
+}
+
+.small-text-1 {
+  font-size: 9px !important;
+}
+}
+
+@media screen and (max-width: 576px) {
+  .small-text-head {
+  font-size: 14px !important;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.btn-text {
+  font-size: 10px !important;
+}
+
+
+.btn-text-p {
+  font-size: 12px !important;
+}
+
+}
+
+@media screen and (max-width: 448px) {
+
+
+  .small-text-head-1 {
+  font-size: 5px !important;
+}
+
+.small-text-1 {
+  font-size: 5px !important;
+}
+}
+
+
+
+  </style>
+
+  <title>Home Loan</title>
+</head>
+<body>
+  
+   <!-- ------------------------------------------------------------------------- ------------------------------------Header ---------------------------- ------------------------------------------------------------------------------------->
+
+     <header class="container-fluid">
+      <div class="row">
+        <div class="nav-section">
+
+          <div class="nav-scroll">
+
+          <div class="nav-logo-div">
+            <img src="https://cbazzar.cloudinlabs.com/storage/icons/C_Bazaar.svg" alt="logo" class="nav-logo">          
+          </div>
+
+        </div>
+      </div>
+      </div>
+
+    </header>
+
+
+
+
+    <!-- body section -->
+
+
+
+  <section class="container mt-5 pt-md-4 pt-0">
+    <div class="credit-cart-report px-sm-0 px-3">
+  
+      <!-- --------Compare & Apply Home Loan Online-------- -->
+     
+     
+      <h5 class="h4 mt-4 mb-2 fw-bolder">Compare & Apply Home Loan Online</h5>
+
+
+      <p class="fs-6">Avail home loans up to Rs.10 crore with interest from 6.60% p.a., processing fees from 0%, and repayment tenure up to 30 years through Credit Bazaar.<br/>
+        <br/>
+      Avail home loans up to Rs.10 crore with interest rates starting at 6.90% p.a. with additional benefits such as extended loan terms and flexible repayment options. Simple documentation, quick processing, and excellent customer service with a response time of 30 – 45 minutes makes Credit Bazaar a go-to place for all your housing loan needs.
+      </p>
+
+
+
+      <!-- --------Top Home Loan Schemes & Offers-------- -->
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">Top Home Loan Schemes & Offers</h5>
+
+      <div>
+
+      <h6 class="h6 mt-4 mb-2 fw-bolder">1. Kotak Mahindra Bank – Best for Low Interest Rate</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Low interest rates starting from 7.50% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee of up to 0.50% of the loan amount</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Loan tenure of up to 20 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Zero prepayment charges</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Balance transfer with top-up loan available</li>
+        </ul>
+
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">2. Canara Bank Housing Loan – Best Interest Rate for Women</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Low interest rates for women starting from 7.05% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Maximum repayment tenure of 30 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee of up to 0.50% of the loan amount</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Can be used to purchase or construct a house/flat</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Zero prepayment charges</li>
+        </ul>
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">3. Axis Bank Home Loan – Best Interest Rate for Salaried Employees</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Low interest rates starting from 7.60% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Loan amount of up to Rs.5 crore</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Maximum repayment tenure of 30 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee of up to 1% of the loan amount</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">No prepayment/foreclosure charges</li>
+        </ul>
+
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">4. HDFC Reach Home Loans for self-employed professionals</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Attractive interest rates starting from 8.10% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Flexible repayment tenure of up to 30 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee of 2% of the loan amount</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Minimal documentation with minimum income of Rs.2 lakh p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Add a woman co-owner for lower interest rates</li>
+        </ul>
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">5. LIC HFL Home Loan for Pensioners/Senior Citizen</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Low interest rates starting from 6.90% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Repayment tenure of up to 15 years or till 70 years of age</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee ranging between Rs.10,000 and Rs.15,000</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Loan to be repaid before the age of 70</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Individuals above the age of 50 having a pension scheme but still employed can also Apply</li>
+        </ul>
+
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">6. SBI Privilege Home Loan for Government Employees</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Low interest rates starting from 8.05% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Zero processing fee</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Loan tenure of up to 30 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Reduced interest rates for women borrowers</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Interest concession when checkoff is provided</li>
+        </ul>
+
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">7. Axis Bank NRI Home Loan: Best for NRIs</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Attractive interest rates starting from 10% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Flexible loan tenure of up to 25 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Minimal documentation and quick disbursal</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Minimal processing fee</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Zero foreclosure charges</li>
+        </ul>
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">8. HDFC Home Loans for Purchase</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Low interest rates starting from 8.10% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Flexible loan tenure of up to 30 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee of up to 0.50% of the loan amount</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Special arrangement for Indian army employees through partnership with AGIF</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Legal and technical counseling from experts</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">EMIs starting at just Rs.646 per lakh*</li>
+        </ul>
+
+
+        <p class="text h6">*The rates mentioned above are applicable under the blockbuster festive offer. All loans are at the sole discretion of HDFC Home Loans.Terms and conditions apply.</p>
+
+
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">9. India bulls Housing Finance Loan for Construction</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Attractive interest rates starting from 7.60% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Flexible repayment options</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee starts from 0.50% onwards</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">No prepayment charges</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">End-to-end loan processing on the website or mobile application</li>
+        </ul>
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">10. DHFL Home Renovation Loan</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Interest rate starting from 6.90% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Maximum loan tenure of 10 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee of Rs.2,500</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Loan amount of up to 90% of the market value or 100% of the estimated cost of improvement</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Available for both salaried and self-employed individuals</li>
+        </ul>
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">11. PNB HFL Plot Loan: Best Home Loan for Plot and Construction</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Attractive rates starting from 8.35% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Flexible loan tenure of up to 30 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee of up to 0.5% of the loan amount</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Loan enhancement in case of escalating costs</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Quick loan application and approval process</li>
+        </ul>
+
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">12. HDFC Home Loans for Existing Customers: Best Home Loan for Existing Customers</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Low interest rates starting from 8.10% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Maximum tenure of 30 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee of 0.5% of the loan amount</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Quick loan disbursal</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Can add co-applicant to increase loan amount</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">EMIs starting at just Rs.646 per lakh*</li>
+        </ul>
+
+
+        <p class="text h6">*The rates mentioned above are applicable under the blockbuster festive offer. All loans are at the sole discretion of HDFC Home Loans.Terms and conditions apply.</p>
+
+
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">13. SBI Realty Home Loan: Best Home Loan for Land Purchase</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Low interest rates starting from 8.05% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Maximum tenure of ten years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee of up to 0.35% of the loan amount</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Maximum loan amount of up to Rs.15 crore</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Interest rate concession for women borrowers</li>
+        </ul>
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">14. HDFC Home Loans Balance Transfer: Best Home Loan Balance Transfer</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Interest rates starting from 8.10% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Avail additional top-up loan of up to Rs.50 lakh</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Loan tenure of up to 30 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee of up to 0.5% of the loan amount</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Adding a co-applicant can further maximize the loan amount</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">EMIs starting at just Rs.646 per lakh*</li>
+        </ul>
+
+        <p class="text h6">*The rates mentioned above are applicable under the blockbuster festive offer. All loans are at the sole discretion of HDFC Home Loans.Terms and conditions apply.</p>
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">15. SBI Smart Home Top Up Loan: Best Top Up home loan</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Interest rates starting from 8.05% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Processing fee of Rs.2,000 + GST</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Overdraft facility for loans above Rs.20 lakh</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Loan tenure of up to 30 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">No prepayment penalty</li>
+        </ul>
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">16. Union Awas Home Loan: Best for Low Credit Score</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Interest starting from 7.90% p.a. for credit score below 600</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Moratorium period of up to 3 years for construction or purchase of home</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Loan tenure of up to 30 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">For agriculturists, quarterly/half-yearly/annual repayments instead of EMI can be availed</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Open to permanent employees of educational institutions and agriculturists with annual income of up to Rs.48,000 p.a.</li>
+        </ul>
+
+
+        <h6 class="h6 mt-4 mb-2 fw-bolder">17. IIFL Swaraj Home Loan: Best Home Loan without Income Proof</h6>
+
+        <ul class="mt-3">
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Interest rates starting from 11% p.a.</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Loan tenure of up to 20 years</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Maximum loan amount of Rs.20 lakh with 85% LTV</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">One female co-applicant mandatory</li>
+          <li class="mt-2 fs-6" style="list-style-type: circle;">Income proof or bank documents not required if not available</li>
+        </ul>
+
+
+      </div>
+
+      <!-- --------Home Loan Eligibility-------- -->
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">Home Loan Eligibility</h5>
+
+      <table class="table table-bordered mt-3">
+      <!-- <thead class="table-dark">
+        <tr>
+          <th scope="col-3" class="small-text-head">MCLR</th>
+          <th scope="col-9" class="small-text-head">Base Rate</th>
+        </tr>
+      </thead> -->
+      <tbody>
+        <tr>
+          <td class="h6 col-3 small-text">Eligibility Criteria</td>
+          <td class="h6 col-9 small-text">Requirement</td>
+        </tr>
+        <tr>
+          <td class="h6 col-3 small-text">Age</td>
+          <td class="h6 col-9 small-text">Minimum Age: 18 years and Maximum Age: 70 years</td>
+        </tr>
+        <tr>
+          <td class="h6 col-3 small-text">Resident Type</td>
+          <td class="h6 col-9 small-text">The applicant must be (any one):
+            <ul>
+              <li class="h6 small-text">Resident Indian</li>
+              <li class="h6 small-text">Non-Resident India (NRI)</li>
+              <li class="h6 small-text">Person of Indian Origin (PIO)</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="h6 col-3 small-text">Employment</td>
+          <td class="h6 col-9 small-text">The applicant can be (any one):
+            <ul>
+              <li class="h6 small-text">Salaried</li>
+              <li class="h6 small-text">Self-employed</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="h6 col-3 small-text">Net Annual Income</td>
+          <td class="h6 col-9 small-text">At least Rs.5-6 lakh depending on the type of employment</td>
+        </tr>
+        <tr>
+          <td class="h6 col-3 small-text">Residence</td>
+          <td class="h6 col-9 small-text">The applicant must have (any one):
+            <ul>
+              <li class="h6 small-text">A permanent residence</li>
+              <li class="h6 small-text">A rented residence where he/she has resided for at least a year prior to applying for a loan</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="h6 col-3 small-text">Credit score</td>
+          <td class="h6 col-9 small-text">A good credit score of at least 750 or more obtained from a recognised credit bureau</td>
+        </tr>
+      </tbody>
+      </table>
+
+
+
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- ------------------------------------------------------------------------- ------------------------------------footer ---------------------------- ------------------------------------------------------------------------------------->
+
+
+  <section class="footer-section container-fluid" style="padding: 0px; margin: 0px; width: 100%;">
+
+  <div class="footer-main-div">
+    <div class="row" >
+      <div class="col-md-2 col-12">
+        <div class="footer-logo-div">
+          <img src="../../Images/logo-1.svg" class="footer-logo">
+        </div>
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Credit Card</h4>
+          <a href="#"><p class="footer-content-p mt-4">Best Credit Cards</p></a>
+          <a href="#"><p class="footer-content-p">Check your Credit Score</p></a>
+          <a href="#"><p class="footer-content-p">Cibil</p></a>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Loan</h4>
+          <a href="#"><p class="footer-content-p mt-4">Personal Loan</p></a>
+          <a href="#"><p class="footer-content-p">Home Loan</p></a>
+          <a href="#"><p class="footer-content-p">Educational Loan</p></a>
+          <a href="#"><p class="footer-content-p">Business Loan</p></a>
+          <a href="#"><p class="footer-content-p">Vehicle Loan</p></a>
+          <a href="#"><p class="footer-content-p">Gold Loan</p></a>
+        </div>  
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Insurance</h4>
+          <a href="#"><p class="footer-content-p mt-4">Life Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Home Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Health Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Vehicle Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Property Insurance</p></a>
+        </div>  
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Investment</h4>
+          <a href="#"><p class="footer-content-p mt-4">Mutual Funds</p></a>
+          <a href="#"><p class="footer-content-p">Fixed Deposit</p></a>
+          <a href="#"><p class="footer-content-p">Recurring Deposit</p></a>
+          <a href="#"><p class="footer-content-p">Demat & Trading</p></a>
+          <a href="#"><p class="footer-content-p">Government Schemes</p></a>
+        </div>  
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Subscribe Newsletter</h5>
+            <div class="footer-div-form mt-4">
+              <input type="text" class="footer-input" placeholder="Enter Your Email">
+              <button class="footer-btn">Get Start</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <div class="profile-icon-section">
+      <div class="profile-icon-content-div">
+        <h6 class="profile-icon-h6">Follow Us :</h6>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-facebook-f "></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div class="footer-policy-section">
+      <div class="footer-policy-div">
+        <h6 class="footer-policy-h6">Copyright &#169;  2022 Cloudin Software Tech Labs</h6>
+      </div>
+      <div class="footer-policy-div">
+        <h6 class="footer-policy-h6">
+          Designed by <span class="footer-policy-span">Cloudin Software Tech Labs</span>
+        </h6>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script defer>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}                           
+  </script>
+</body>
+</html>
