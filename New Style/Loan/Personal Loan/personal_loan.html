@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!-- google fonts -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- font awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+/*----------------------------------------- nav section ------------------------------------------ */
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-radius: 0px 0px 18px 18px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+}
+
+
+.nav-logo {
+  width: 130px;  
+  max-width: 130px;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.nav-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  color: #20bf55;
+  font-weight: 500;
+   border-radius: 7px;
+  background-color: #e6eaef;
+  outline: none;
+  border: none;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+
+/* hover nav */
+
+/* .nav-ul-div {
+} */
+
+.nav-ul.new-ul {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+  max-width: 250px;
+  height: auto;
+  position: absolute;
+  top: 83px;
+  left: 2%;
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  max-width: 250px;
+  top: 83px;
+  left: 2%;
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.nav-active {
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+  transition: 0.5s;
+  display: flex;
+  background-color: #f1fff5;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.nav-ul.new-ul a, .nav-ul a {
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+  transition: 0.5s;
+  display: flex;
+  padding: 3px 5.5px 13px 9.5px;
+  border-radius: 7px;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-p {
+  margin: 10px 0px 0px 20px;
+}
+
+.nav-ul{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.nav-li {
+  margin: 5px;
+  list-style: none;
+}
+
+.nav-icon {
+  color: #20bf55;
+  margin-top: 10px;
+  width: 15px;
+  margin-left: 10px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-radius: 18px;
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.nav-logo {
+  width: 130px;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.nav-btn {
+  display: none;
+}
+
+
+
+
+}
+
+/*----------------------------------------- end nav section ------------------------------------------ */
+
+
+/*---------------------------------------- footer section ------------------------------------------- */
+
+
+
+.footer-section {
+  background-color: #f8f8fa;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+}
+
+.footer-main-div {
+  padding: 30px 20px;
+}
+
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.footer-input::placeholder{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  border: none;
+  outline: none;
+  width: 150px;
+  max-width: 150px;
+  margin: 10px auto;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-div a:hover {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 13px;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+/* profile */
+
+.profile-icon-content-div {
+  display: flex;
+   background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+   padding: 20px 0px;
+   display: flex;
+   justify-content: center;
+}
+
+.profile-icon-div {
+  width: 30px;
+  margin: 0px 10px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-icon-div i {
+  color: #20bf55;
+  font-size: 17px;
+}
+
+.profile-icon-h6 {
+  color: white;
+  margin-bottom: 0px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 20px 30px;
+}
+
+.footer-policy-h6 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .footer-section {
+    max-width: 1100px !important;
+  }
+  
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  height: 27px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+
+.footer-input::placeholder{
+  font-size: 10px;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  margin: 20px auto;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  width: 80%;
+} 
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+  .footer-section {
+    max-width: 950px !important;
+  }
+  
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  height: 30px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+
+.footer-input::placeholder{
+  font-size: 10px;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  margin: 20px auto;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 9px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  width: 90%;
+} 
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .footer-section {
+    max-width: 700px !important;
+    padding: 30px;
+  }
+
+  .footer-logo-div {
+    margin-left: 20px;
+  }
+  
+  .footer-content-div {
+    margin: 20px 30px;
+  }
+
+.footer-div-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-input{
+  width: 90%;
+  height: 30px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+
+.footer-input::placeholder{
+  font-size: 10px;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+.footer-btn {
+  margin: 20px auto;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5.4px;
+  background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+}
+.footer-content-div a {
+  text-decoration: none;
+  color: #646464;
+}
+
+.footer-content-h4 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer-content-p {
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  width: 90%;
+} 
+
+
+/* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.footer-policy-h6 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 10px;
+  font-weight: 600;
+  color: black;
+}
+}
+
+@media only screen and (max-width: 510px) {
+  /* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+}
+
+.footer-policy-h6 {
+  font-size: 8px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 8px;
+  font-weight: 600;
+  color: black;
+}
+}
+
+@media only screen and (max-width: 398px) {
+  /* policy */
+
+
+.footer-policy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+}
+
+.footer-policy-h6 {
+  font-size: 7px;
+  font-weight: 500;
+  color: #646464;
+  margin-bottom: 0px;
+}
+
+.footer-policy-span {
+   font-size: 7px;
+  font-weight: 600;
+  color: black;
+}
+
+
+/* profile */
+
+.profile-icon-content-div {
+  display: flex;
+   background-image: linear-gradient(to right, #20bf55 0%, #01baef 100%);
+   padding: 20px 0px;
+   display: flex;
+   justify-content: center;
+}
+
+.profile-icon-div {
+  width: 30px;
+  margin: 0px 5px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-icon-div i {
+  color: #20bf55;
+  font-size: 17px;
+}
+
+.profile-icon-h6 {
+  color: white;
+  margin-bottom: 0px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+}
+
+
+/*---------------------------------------- end footer section ------------------------------------------- */
+
+
+/* general style */
+
+
+a {
+  text-decoration: none;
+}
+
+/* collapsible */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: rgb(108, 108, 108);
+  color: #fff;
+  height: auto;
+  cursor: pointer;
+  padding: 7px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+
+.active, .collapsible:hover {
+  background-color: rgb(108, 108, 108);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  border: 2px solid black;
+  color: black;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .small-text-head-1 {
+  font-size: 10px !important;
+}
+
+.small-text-1 {
+  font-size: 9px !important;
+}
+}
+
+@media screen and (max-width: 576px) {
+  .small-text-head {
+  font-size: 14px !important;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.btn-text {
+  font-size: 10px !important;
+}
+
+
+.btn-text-p {
+  font-size: 12px !important;
+}
+
+}
+
+@media screen and (max-width: 448px) {
+
+
+  .small-text-head-1 {
+  font-size: 5px !important;
+}
+
+.small-text-1 {
+  font-size: 5px !important;
+}
+}
+
+
+
+  </style>
+
+  <title>Personal Loan</title>
+</head>
+<body>
+  
+   <!-- ------------------------------------------------------------------------- ------------------------------------Header ---------------------------- ------------------------------------------------------------------------------------->
+
+     <header class="container-fluid">
+      <div class="row">
+        <div class="nav-section">
+
+          <div class="nav-scroll">
+
+          <div class="nav-logo-div">
+            <img src="https://cbazzar.cloudinlabs.com/storage/icons/C_Bazaar.svg" alt="logo" class="nav-logo">          
+          </div>
+
+        </div>
+      </div>
+      </div>
+
+    </header>
+
+
+
+
+    <!-- body section -->
+
+
+
+  <section class="container mt-5 pt-md-4 pt-0">
+    <div class="credit-cart-report px-sm-0 px-3">
+      <!-- --------Top Credit Cards-------- -->
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">Low Interest Rate Loan Offers in India:</h5>
+      <p class="fs-6">The dictionary defines a loan as thus, ‘a thing that is borrowed, especially a sum of money that is expected to be paid back with interest’ and rightfully so, our entire civilization is built on the concepts of loaning and paying back. In modern day India, the middle class has emerged as an average marketer’s dream target, the playground for companies that deal in consumer products and consequently, the numero uno customer for the massively available loans. From homes to education, vehicles to vacations, if there is an expenditure angle involved, then there is a loan for it.<br/>
+        <br/>
+      In terms of sheer volume and popularity, the banks have segregated the concept of loaning into various types. There is the <a href="#">personal loan</a>, and as its name so aptly suggests, is an influx of monies that the receiver can use for whatever personal requirement or monetary contingency that he/she might have. Not surprisingly, a  <a href="#">home loan</a> and  <a href="#">car loan</a> is intended for the purchase of a home and a car respectively, while an <a href="#">education loan</a>  helps the borrower cope with the high prices for a competent education these days. In India, almost all private and public sector banks count the aforementioned loan products as a hot commodity in their respective portfolios and competition is ripe to attract a prospective customer’s undivided attention. From varying interest rates to relaxed loan tenures, poaching strategies like the concept of home loan transfer- the shifting of home loan from one lender to another who offers a lower interest rate, to heavy discounts and offers, the string of available loan options are many.
+      How can anybody discriminate between these available choices? Explore, Credit Bazaar.com.
+      </p>
+
+
+      <!-- --------Why Apply for a Loan at Credit Bazaar.com?-------- -->
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">Why Apply for a Loan at Credit Bazaar.com?</h5>
+      <p class="fs-6">The urbane loan comparison website, Credit Bazaar, helps you sort through a plethora of probable loan options, through a simple and eye-pleasing interface, that is focussed on bringing both the pros and cons of the associated loan plan, on the proverbial table for your inspection. Why apply for a loan with Credit Bazaar? The following reasons form the crux of our offering to you.
+      </p>
+
+      <div>
+      <p class="fs-6"><span class="h6">1. One Stop Shop for Multiple Products : </span> Looking for a personal, home or car loan? Credit Bazaar offers multiple competent choices in each case, based on your specific requirements.</h6>
+      </p>
+      <p class="fs-6"><span class="h6">2. Lowest Interest Rates: </span>Our association with market leaders like HDFC Bank and Axis Bank help us score the lowest interest rates on personal, car or home loans for you.</h6>
+      </p>
+      <p class="fs-6"><span class="h6">3. Get Instant Quotes:</span>Filling up a simple online form helps us evaluate the perfect loan options for you. Rather than spending a substantial amount of time finding the right cut, relax, have some coffee.</h6>
+      </p>
+      <p class="fs-6"><span class="h6">4. Simple Online Comparison:</span>Various parameters are in play when loans are compared against each other for your specific suitability- rate of 4. interest, EMI, processing fees, customer feedback etc. With Credit Bazaar, never end up with an option that hasn’t been properly and profusely vetted.</h6>
+      </p>
+      <p class="fs-6"><span class="h6">5. Transparent Workings:</span> Credit Bazaar isn’t a mediator, a promoter or in cahoots with any bank. Our assessment of the available loan options for you is always impartial and objective, such that you have every last shred of information to make that informed decision.</h6>
+      </p>
+      <p class="fs-6"><span class="h6">6. Privacy:</span>We treat your personal information with the highest of regards. The information you provide is only shared with your chosen lender, and never shared with a third party for any reason whatsoever.</h6>
+      </p>
+
+      <p class="fs-6"><span class="h6">7. Trust:</span>Top banks in India like HDFC and Axis Bank swear by the Credit Bazaar name. Our reliable online technology has been powerfully adopted by these lenders to provide their customers the best loan experience on their own websites.</h6>
+      </p>
+    </div>
+      <p class="text-end h6">Further Reading: MCLR based lending rate.</p>
+
+
+
+
+      <!-- --------How to get a Loan in India through Credit Bazaar.com?-------- -->
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">How to get a Loan in India through Credit Bazaar.com?</h5>
+      <p class="fs-6">Applying for a loan on Credit Bazaar be it a personal loan, car or home loan, is a simple and intuitive process. The following lists the various steps involved-
+      </p>
+
+      <div>
+      <p class="fs-6"><span class="h6">Step 1-</span> On Credit Bazaar.com’s homepage, access the navigation menu that is located at the top of the page and select the LOANS menu item. Next, select from the various loan options on offer. The choices include Personal Loan, Home Loan, Car Loan, Used Car Loan and Education Loan. Choose the option that is relevant to you by hovering your cursor over it. Spread before you are some popular loaning banks (with regards to the loan option selected) and the friendly <span class="h6 fw-border">‘Get Quote’ </span>and <span class="h6 fw-border">‘Explore’</span> buttons. Clicking on either of these will open up a neat interface with a bunch of simple questions. Simply provide the requisite information and follow the simple wizard by responding to the various prompts. Next, spread before you the various applicable loan options. It’s time to choose!
+        <br/>
+      Alternatively, choosing the lender directly from this menu will allow you to properly check the features and benefits associated with this lender. The <span class="h6 fw-border">‘Apply Now’ </span>option takes this step further.</h6>
+      </p>
+
+       <p class="fs-6"><span class="h6">Step 2-</span>You must compare between the various loan options before you and select the one that most appeals to your requirements and budget.
+      </p>
+
+       <p class="fs-6"><span class="h6">Step 3-</span>After the submission of the online application, you will receive an instant e-approval from Credit Bazaar. This application is then transferred to your chosen bank from wherein a customer support executive will get in touch with you within a short duration of time. Meanwhile, you can track your application through SMS alerts and email.
+        <br/>
+        Simple? Actually, it’s the coming together of various factors that help compare the different loan options available to you. Subscribing to Credit Bazaar helps save your time, money and efforts, while assuring you the best loan options that specifically address your exclusive requirements.
+      </p>
+      </div>
+
+
+      <!-- --------MCLR (Marginal Cost of Funds Based Lending Rate)-------- -->
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">MCLR (Marginal Cost of Funds Based Lending Rate)</h5>
+
+      <p class="fs-6">Individuals who have availed loans from lenders or banks before 1 April, 2016 will be paying the base rate and not MCLR. MCLR or marginal cost of funds based lending rate, when compared to the base rate compared, is seen to be lower by 5 to 50 basis points. This happens as the marginal cost of funds based lending rate is closely linked with the repo rate. Thus, there is better transmission of Reserve Bank of India’s rate cut to the borrower.
+      </p>    
+
+
+      <!-- --------What is MCLR?-------- -->
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">What is MCLR?</h5>
+      <p class="fs-6">The MCLR is a reference rate or internal benchmark for the financial institution. Marginal cost of funds based lending rate defines the process used to determine the <a href="#"> minimum home loan rate of interest. </a> The MCLR method was introduced in the Indian financial system by the Reserve Bank of India in the year 2016. The MCLR system has replaced the base rate system that was introduced in the year 2010. Thus, renewal of credit limits and sanctioning of loans is done as per MCLR norms.
+      </p>  
+
+      <!-- --------Current MCLR Rates 29 Aug 2022-------- -->
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">Current MCLR Rates 29 Aug 2022</h5>
+      <table class="table table-bordered">
+      <thead class="table-dark ">
+        <tr>
+          <th scope="col-2" class="small-text-head-1">Banks</th>
+          <th scope="col-1" class="small-text-head-1">3 years</th>
+          <th scope="col-1" class="small-text-head-1">2 years</th>
+          <th scope="col-1" class="small-text-head-1">1 year</th>
+          <th scope="col-1" class="small-text-head-1">6 months</th>
+          <th scope="col-1" class="small-text-head-1">3 months</th>
+          <th scope="col-1" class="small-text-head-1">1 months</th>
+          <th scope="col-1" class="small-text-head-1">Overnight</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-2 small-text-1">SBI MCLR</td>
+          <td class="col-1 small-text-1">7.30%</td>
+          <td class="col-1 small-text-1">7.20%</td>
+          <td class="col-1 small-text-1">7.00%</td>
+          <td class="col-1 small-text-1">6.95%</td>
+          <td class="col-1 small-text-1">6.65%</td>
+          <td class="col-1 small-text-1">6.65%</td>
+          <td class="col-1 small-text-1">6.65%</td>
+        </tr>
+        <tr>
+          <td class="col-2 small-text-1">HDFC MCLR</td>
+          <td class="col-1 small-text-1">7.40%</td>
+          <td class="col-1 small-text-1">7.30%</td>
+          <td class="col-1 small-text-1">7.20%</td>
+          <td class="col-1 small-text-1">7.05%</td>
+          <td class="col-1 small-text-1">6.95%</td>
+          <td class="col-1 small-text-1">6.90%</td>
+          <td class="col-1 small-text-1">6.85%</td>
+        </tr>
+        <tr>
+          <td class="col-2 small-text-1">Axis MCLR</td>
+          <td class="col-1 small-text-1">7.55%</td>
+          <td class="col-1 small-text-1">7.50%</td>
+          <td class="col-1 small-text-1">7.40%</td>
+          <td class="col-1 small-text-1">7.35%</td>
+          <td class="col-1 small-text-1">7.30%</td>
+          <td class="col-1 small-text-1">7.20%</td>
+          <td class="col-1 small-text-1">7.20%</td>
+        </tr>
+        <tr>
+          <td class="col-2 small-text-1">PNB MCLR</td>
+          <td class="col-1 small-text-1">7.60%</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">7.30%</td>
+          <td class="col-1 small-text-1">7.00%</td>
+          <td class="col-1 small-text-1">6.80%</td>
+          <td class="col-1 small-text-1">6.70%</td>
+          <td class="col-1 small-text-1">6.65%</td>
+        </tr>
+        <tr>
+          <td class="col-2 small-text-1">Citibank MCLR</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">6.30%</td>
+          <td class="col-1 small-text-1">6.15%</td>
+          <td class="col-1 small-text-1">5.95%</td>
+          <td class="col-1 small-text-1">5.90%</td>
+          <td class="col-1 small-text-1">5.70%</td>
+        </tr>
+        <tr>
+          <td class="col-2 small-text-1">IndusInd MCLR</td>
+          <td class="col-1 small-text-1">8.95%</td>
+          <td class="col-1 small-text-1">8.90%</td>
+          <td class="col-1 small-text-1">8.60%</td>
+          <td class="col-1 small-text-1">8.50%</td>
+          <td class="col-1 small-text-1">8.35%</td>
+          <td class="col-1 small-text-1">8.30%</td>
+          <td class="col-1 small-text-1">8.25%</td>
+        </tr>
+
+        <tr>
+          <td class="col-2 small-text-1">RBL MCLR</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">8.65%</td>
+          <td class="col-1 small-text-1">8.50%</td>
+          <td class="col-1 small-text-1">8.20%</td>
+          <td class="col-1 small-text-1">8.10%</td>
+          <td class="col-1 small-text-1">8.10%</td>
+        </tr>
+
+        <tr>
+          <td class="col-2 small-text-1">DBS MCLR</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">6.80%</td>
+          <td class="col-1 small-text-1">6.60%</td>
+          <td class="col-1 small-text-1">6.50%</td>
+          <td class="col-1 small-text-1">6.35%</td>
+          <td class="col-1 small-text-1">6.35%</td>
+        </tr>
+
+        <tr>
+          <td class="col-2 small-text-1">Canara MCLR</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">7.35%</td>
+          <td class="col-1 small-text-1">7.30%</td>
+          <td class="col-1 small-text-1">6.95%</td>
+          <td class="col-1 small-text-1">6.70%</td>
+          <td class="col-1 small-text-1">6.70%</td>
+        </tr>
+
+        <tr>
+          <td class="col-2 small-text-1">IDFC First Bank MCLR</td>
+          <td class="col-1 small-text-1">9.20%</td>
+          <td class="col-1 small-text-1">8.80%</td>
+          <td class="col-1 small-text-1">8.40%</td>
+          <td class="col-1 small-text-1">8.30%</td>
+          <td class="col-1 small-text-1">8.10%</td>
+          <td class="col-1 small-text-1">8.05%</td>
+          <td class="col-1 small-text-1">8.05%</td>
+        </tr>
+
+        <tr>
+          <td class="col-2 small-text-1">Bank of India MCLR</td>
+          <td class="col-1 small-text-1">7.80%</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">7.35%</td>
+          <td class="col-1 small-text-1">7.30%</td>
+          <td class="col-1 small-text-1">7.25%</td>
+          <td class="col-1 small-text-1">7.20%</td>
+          <td class="col-1 small-text-1">6.70%</td>
+        </tr>
+
+        <tr>
+          <td class="col-2 small-text-1">Nainital Bank MCLR</td>
+          <td class="col-1 small-text-1">8.10%</td>
+          <td class="col-1 small-text-1">7.70%</td>
+          <td class="col-1 small-text-1">7.40%</td>
+          <td class="col-1 small-text-1">7.25%</td>
+          <td class="col-1 small-text-1">7.15%</td>
+          <td class="col-1 small-text-1">7.10%</td>
+          <td class="col-1 small-text-1">7.10%</td>
+        </tr>
+
+        <tr>
+          <td class="col-2 small-text-1">Jammu and Kashmir Bank MCLR</td>
+          <td class="col-1 small-text-1">7.85%</td>
+          <td class="col-1 small-text-1">7.80%</td>
+          <td class="col-1 small-text-1">7.35%</td>
+          <td class="col-1 small-text-1">7.20%</td>
+          <td class="col-1 small-text-1">6.90%</td>
+          <td class="col-1 small-text-1">6.70%</td>
+          <td class="col-1 small-text-1">6.60%</td>
+        </tr>
+
+        <tr>
+          <td class="col-2 small-text-1">Central Bank of India MCLR</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">7.10%</td>
+          <td class="col-1 small-text-1">7.00%</td>
+          <td class="col-1 small-text-1">6.85%</td>
+          <td class="col-1 small-text-1">6.55%</td>
+          <td class="col-1 small-text-1">6.55%</td>
+        </tr>
+
+         <tr>
+          <td class="col-2 small-text-1">Bandhan Bank MCLR</td>
+          <td class="col-1 small-text-1">10.86%</td>
+          <td class="col-1 small-text-1">10.33%</td>
+          <td class="col-1 small-text-1">8.94%</td>
+          <td class="col-1 small-text-1">8.46%</td>
+          <td class="col-1 small-text-1">8.27%</td>
+          <td class="col-1 small-text-1">8.15%</td>
+          <td class="col-1 small-text-1">8.08%</td>
+        </tr>
+        
+         <tr>
+          <td class="col-2 small-text-1">UBI MCLR</td>
+          <td class="col-1 small-text-1">7.40%</td>
+          <td class="col-1 small-text-1">7.35%</td>
+          <td class="col-1 small-text-1">7.20%</td>
+          <td class="col-1 small-text-1">7.05%</td>
+          <td class="col-1 small-text-1">6.90%</td>
+          <td class="col-1 small-text-1">6.70%</td>
+          <td class="col-1 small-text-1">6.60%</td>
+        </tr>
+
+         <tr>
+          <td class="col-2 small-text-1">UCO Bank MCLR</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">7.30%</td>
+          <td class="col-1 small-text-1">7.20%</td>
+          <td class="col-1 small-text-1">6.95%</td>
+          <td class="col-1 small-text-1">6.85%</td>
+          <td class="col-1 small-text-1">6.70%</td>
+        </tr>
+
+         <tr>
+          <td class="col-2 small-text-1">Punjab and Sind Bank MCLR</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">NA</td>
+          <td class="col-1 small-text-1">7.65%</td>
+          <td class="col-1 small-text-1">7.55%</td>
+          <td class="col-1 small-text-1">7.45%</td>
+          <td class="col-1 small-text-1">7.30%</td>
+          <td class="col-1 small-text-1">7.15%</td>
+        </tr>
+
+         <tr>
+          <td class="col-2 small-text-1">Standard Chartered MCLR</td>
+          <td class="col-1 small-text-1">7.60%</td>
+          <td class="col-1 small-text-1">7.25%</td>
+          <td class="col-1 small-text-1">6.65%</td>
+          <td class="col-1 small-text-1">6.50%</td>
+          <td class="col-1 small-text-1">6.50%</td>
+          <td class="col-1 small-text-1">6.40%</td>
+          <td class="col-1 small-text-1">6.15%</td>
+        </tr>
+
+         <tr>
+          <td class="col-2 small-text-1">IDBI Bank MCLR</td>
+          <td class="col-1 small-text-1">8.60%</td>
+          <td class="col-1 small-text-1">8.15%</td>
+          <td class="col-1 small-text-1">7.80%</td>
+          <td class="col-1 small-text-1">7.45%</td>
+          <td class="col-1 small-text-1">7.30%</td>
+          <td class="col-1 small-text-1">7.25%</td>
+          <td class="col-1 small-text-1">7.05%</td>
+        </tr>
+       
+        <tr>
+          <td class="col-2 small-text-1">Indian Overseas Bank MCLR</td>
+          <td class="col-1 small-text-1">7.45%</td>
+          <td class="col-1 small-text-1">7.45%</td>
+          <td class="col-1 small-text-1">7.45%</td>
+          <td class="col-1 small-text-1">7.40%</td>
+          <td class="col-1 small-text-1">7.40%</td>
+          <td class="col-1 small-text-1">6.85%</td>
+          <td class="col-1 small-text-1">6.85%</td>
+        </tr>
+
+      </tbody>
+      </table>
+
+      <p class="fs-6">MCLR (marginal cost of funds based lending rate) is the lowest interest rate that a bank or lender can offer. Most banks cannot offer interest rates lower than the marginal cost of funds based lending rate. However, certain exceptions can be made when allowed by the Reserve Bank of India (RBI).
+      </p>  
+
+
+      <!-- --------What Is MCLR Rate In Home Loan?-------- -->
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">What Is MCLR Rate In Home Loan?</h5>
+      <p class="fs-6">MCLR is closely linked with the repo rate and fund costs of the banks. Thus, if there is a change in the repo rate, it will have an impact on your home loan’s floating rate of interest. If a bank brings down the marginal cost of funds based lending rate, the floating rate of interest associated with your home loan also comes down. This will not be affecting your <a href="#">equated monthly installments </a>  but the tenure of the loan will get impacted.
+      </p> 
+
+
+      <!-- --------RBI Guidelines About MCLR:------- -->
+
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">RBI Guidelines About MCLR:</h5>
+        <ul>
+          <li class="mt-4">Fixed rate home loans will not be affected by MCLR.</li>
+          <li class="mt-3">Deposit balances and other borrowings are considered while computation of marginal cost of funds.</li>
+          <li class="mt-3">Banks must publish marginal cost of funds based lending rates for different tenors.</li>
+          <li class="mt-3">MCLR as on the sanction date of the floating rate home loan will stand the same till next reset date.</li>
+          <li class="mt-3"><span class="fw-bolder">Welcome bonus or gift : </span> Some banks offer welcome gifts and joining bonuses on applying for a credit card. Gifts could be the latest gadget or bonus points and miles.</li>
+          <li class="mt-3"><span class="fw-bolder">Payment options : </span>Most cards will allow you to make payments via multiple channels.</li>
+        </ul>
+
+      <!-- --------Difference Between MCLR And Base Rate------- -->
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">Difference Between MCLR And Base Rate</h5>
+
+      <table class="table table-bordered mt-3">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col-7" class="small-text-head">MCLR</th>
+          <th scope="col-5" class="small-text-head">Base Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-7 small-text">MCLR or marginal cost of funds based lending rate has been introduced so that end borrowers can enjoy the benefits associated with repo rate cuts by the Reserve Bank of India (RBI). This has been implemented to make the banking system even more transparent.</td>
+          <td class="col-5 small-text">The minimum rate of interest at which banks offer loans to their customers is called the base rate.</td>
+        </tr>
+        <tr>
+          <td class="col-7 small-text">MCLR depends on factors like CRR (Cash Reserve Ratio), marginal cost of funds, tenor premium, and operating cost</td>
+          <td class="col-5 small-text">Base rate depends on different factors like profit, bank deposit rates, bank costs, etc.</td>
+        </tr>
+        <tr>
+          <td class="col-7 small-text">It is dependent on the repo rate changes made by the RBI.</td>
+          <td class="col-5 small-text">It is not dependent on the repo rate set by the Reserve Bank of India.</td>
+        </tr>
+        <tr>
+          <td class="col-7 small-text">Marginal cost of funds based lending rate can be different for different loan tenures.</td>
+          <td class="col-5 small-text">Banks can choose to change the base rate quarterly.</td>
+        </tr>
+      </tbody>
+      </table>
+
+      <!-- --------How to calculate MCLR?------- -->
+
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">How to calculate MCLR?</h5>
+
+      <p class="fs-6">In order to calculate the marginal cost of funds based lending rate, you must consider all the borrowing sources for a bank. A bank borrows from several sources including,<a href="#"> fixed deposit</a>, current accounts, savings accounts, etc. The rate of interest in these borrowing sources can be used by you for the calculation of marginal borrowing cost. You must understand that the source of a bank’s funds is not only borrowing, but also the equity (retained or infused earnings). Thus, return on equity can also be expected.
+        <br/>
+      The formula prescribed by the Reserve Bank of India for calculation of MCLR is given below:
+
+      </p>  
+
+
+      <!-- --------Marginal cost of funds = Marginal borrowing cost x 92% + return on the net worth x 8%------- -->
+
+
+      <h5 class="h4 mt-4 mb-2 fw-bolder">Marginal cost of funds = Marginal borrowing cost x 92% + return on the net worth x 8%</h5>
+
+      <p class="fs-6">Banks must also maintain a cash reserve ratio of 4%. On this deposit, no interest is earned by the bank. Under MCLR, banks can avail some allowance called Negative Carry on CRR. Also, the operating costs must be considered and taken care of. There are several expenses of a bank that includes raising funds, opening branches, paying salary to its employees etc. These are not charged to the customers. Finally comes the discount or tenor premium. The reset period for the interest rate is called the tenor. It is directly proportional to the reset period i.e. the tenor is higher if the reset period is higher.
+      </p>
+
+
+      <!-- --------Thus, MCLR depends on------- -->
+
+
+      <h5 class="h4 mt-5 mb-2 fw-bolder">Thus, MCLR depends on</h5>
+      <ol class="mt-3">
+        <li class="h6">Tenor premium,</li>
+        <li class="h6">Operating costs of the bank,</li>
+        <li class="h6">Negative carry on Cash Reserve Ratio, and</li>
+        <li class="h6">Marginal cost of funds.</li>
+      </ol>
+
+      <!-- --------How To Convert Base Rate Home Loan To MCLR?------- -->
+
+
+      <h5 class="h4 mt-5 mb-2 fw-bolder">How To Convert Base Rate Home Loan To MCLR?</h5>
+      <p class="fs-6">The decision to switch to MCLR from base rate depends majorly on the actual benefits and the transfer cost. Various banks charge differently for this switch. However, there are certain banks that allow you to <span class="h6">convert a home loan to MCLR</span> without charging anything.
+        <br/>
+        <br/>
+      <span class="h6">Example: </span>Consider you have borrowed an amount of Rs.40 lakh as home loan and you intend to repay it over a tenure of 20 years. The base associated with your home loan stands at 9.95%. After a period of three years from the commencement of the loan tenure, you would have paid an amount of Rs.38,468 as your monthly installments. You have also paid an interest amount of Rs.11,63,514. If you choose to continue on the same path with your base rate, you will be paying a total interest of Rs.52,32,428. However, if you choose you switch to MCLR for your home loan at 8.55% for the remaining tenure (17 years in this case), you will be paying an interest of Rs.34,00,396. This is the amount that you pay for 17 years. So, the total interest that you pay for your home loan is (Rs.11,63,514 + Rs.34,00,396) which comes up to Rs.45,63,910. It shows that you save a substantial amount of Rs.6,68,518 by switching to MCLR from base rate 
+      </p>
+
+
+
+      <!-- --------Personal Loan------- -->
+      <!-- --------Compare and Apply Personal Loan Online------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Personal Loan</h5>
+      <h5 class="h4 mt-2 mb-2 fw-bolder">Compare and Apply Personal Loan Online</h5>
+      <p class="fs-6">Get personal loans of up to Rs.40 lakh and above at attractive rates starting at 8.30% p.a. with flexible tenures of up to 7 years. The process to apply for a personal loan is extremely simple and hassle-free and can be done through both online and offline channels.
+      </p>
+
+      <!-- ------Personal Loan Details------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Personal Loan Details</h5>
+
+      <table class="table table-bordered mt-3">
+      <tbody>
+        <tr>
+          <td class="col-5 small-text">Interest Rate</td>
+          <td class="col-7 small-text">8.30% p.a. onwards</td>
+        </tr>
+        <tr>
+          <td class="col-7 small-text">Loan Amount</td>
+          <td class="col-5 small-text">Up to Rs.40 lakh</td>
+        </tr>
+        <tr>
+          <td class="col-7 small-text">Loan Tenure</td>
+          <td class="col-5 small-text">Up to 7 years</td>
+        </tr>
+        <tr>
+          <td class="col-7 small-text">Processing Fee</td>
+          <td class="col-5 small-text">0% - 6% of the loan amount + GST</td>
+        </tr>
+      </tbody>
+      </table>
+
+
+      <!-- ------Table of Contents------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Table of Contents</h5>
+
+      <ul>
+        <li class="h6"><a href="#">Personal Loan Interest Rates</a></li>
+        <li class="h6"><a href="#">Personal Loan Eligibility Criteria</a></li>
+        <li class="h6"><a href="#">Personal Loan EMI Calculator</a></li>
+        <li class="h6"><a href="#">Different Types of Personal Loans in India</a></li>
+        <li class="h6"><a href="#">Buy Now Pay Later (BNPL)</a></li>
+        <li class="h6"><a href="#">Personal Loan Disbursal</a></li>
+        <li class="h6"><a href="#">FAQs on Personal Loan</a></li>
+      </ul>
+
+      <!-- ------Personal Loan Interest Rates------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Personal Loan Interest Rates</h5>
+      <p class="fs-6">The <a href="#">personal loan interest rates </a> vary between 8.30% p.a. and 49% p.a. Depending on the loan amount availed by you, your credit score, and repayment tenure, the interest rate charged on your loan is decided. If you maintain a high credit score and have a good relationship with the bank, then the interest rate on your personal loan can be lowered.
+      </p>
+
+      <!-- ------Uses of Personal Loan------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Uses of Personal Loan</h5>
+      <p class="fs-6">What can you use a personal loan for? Since it is an unsecured loan without the need for any collateral, there are very few limitations on how you can use a personal loan. It can broadly be used for consolidating your debt (from other loans or <a href="#">credit cards</a>), making high-value purchases for which you do not have cash in hand, or for emergency situations. It cannot be used for speculative purposes or for making investments in the stock market. Some of the common reasons that people take out personal loans for includes meeting sudden business or educational expenses, paying for a vacation, buying high-end electronic gadgets or household appliances, wedding expenses, emergency medical expenses, home renovations, etc. It can also be used for buying a vehicle if the rate of interest on the personal loan is lower than that of a vehicle loan. Thus, a personal loan has a wide variety of uses and can come in handy for meeting either planned or emergency expenditure.
+      </p>
+
+      <!-- ----------Personal Loan Eligibility Criteria---------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Personal Loan Eligibility Criteria</h5>
+      <p class="fs-6">The following factors are taken into consideration when a lender goes through your loan application. If you meet these criteria, you are <a href="#">eligible for a personal loan:</a>
+      </p>
+
+       <table class="table table-bordered mt-3">
+        <thead class="table-dark">
+          <th class="col-4">Criteria</th>
+          <th class="col-4">Salaried</th>
+          <th class="col-4">Self-Employed</th>
+        </thead>
+      <tbody>
+        <tr>
+          <td class="col-4 small-text">Age</td>
+          <td class="col-4 small-text">21 years to 60 years</td>
+          <td class="col-4 small-text">22 years to 55 years</td>
+        </tr>
+        <tr>
+          <td class="col-4 small-text">Net Monthly Income</td>
+          <td class="col-4 small-text">Rs.15,000</td>
+          <td class="col-4 small-text">Rs.25,000</td>
+        </tr>
+        <tr>
+          <td class="col-4 small-text"><a href="#">CIBIL Score</a></td>
+          <td class="col-4 small-text">Above 750</td>
+          <td class="col-4 small-text">Above 750</td>
+        </tr>
+        <tr>
+          <td class="col-4 small-text">Minimum Loan Amount</td>
+          <td class="col-4 small-text">Rs.50,000</td>
+          <td class="col-4 small-text">Rs.50,000</td>
+        </tr>
+        <tr>
+          <td class="col-4 small-text">Maximum Loan Amount</td>
+          <td class="col-4 small-text">Rs.25 lakh</td>
+          <td class="col-4 small-text">Rs.50 lakh</td>
+        </tr>
+        
+      </tbody>
+      </table>
+
+      <!-- ----------Personal Loan EMI Calculator---------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Personal Loan EMI Calculator</h5>
+      <p class="fs-6">Use Credit Bazaar <a href="#"> Personal loan EMI calculator </a>to calculate your EMI beforehand to plan and manage your finances in a better way. Personal Loan calculator lets you check your loan eligibility and helps you compare loans offered by different banks.
+        <br/>
+        <br/>
+      All you need to do is enter the loan details, including your preferred loan amount, interest rate, tenure, and processing fee. Hit "Calculate" to check your EMI. The lowest applicable EMI per lakh for a tenure of 7 years at minimum applicable interest rate is Rs.1,599.
+        <br/>
+        <br/>
+      The result is followed by an amortization table, which will give you a detailed break-up of your repayment schedule.
+      </p>
+
+
+      <!-- ----------Documents Required to apply Personal Loan---------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Documents Required to apply Personal Loan</h5>
+
+      <p class="fs-6">You must submit a set of documents that lenders require when approving a personal loan application. Here are the details for the <a href="#">documents needed for a personal loan.</a> </p>
+      
+      <table class="table table-bordered mt-3">
+        <thead class="table-dark">
+          <th class="col-2 small-text-head">Requirements</th>
+          <th class="col-5 small-text-head">Salaried Individuals</th>
+          <th class="col-5 small-text-head">Self Employed</th>
+        </thead>
+      <tbody>
+        <tr>
+          <td class="col-2 small-text">Proof of Identity</td>
+          <td class="col-5 small-text">Passport, Voter’s ID, Driving License or PAN Card</td>
+          <td class="col-5 small-text">Passport, Voter’s ID, Driving License or PAN Card</td>
+        </tr>
+        <tr>
+          <td class="col-2 small-text">Proof of Residence</td>
+          <td class="col-5 small-text">Passport or utility bills</td>
+          <td class="col-5 small-text">Passport or utility bills</td>
+        </tr>
+        <tr>
+          <td class="col-2 small-text">Proof of Income</td>
+          <td class="col-5 small-text">Bank statement of salary account for the past two years</td>
+          <td class="col-5 small-text">Audited financial statement of the past two years</td>
+        </tr>        
+      </tbody>
+      </table>
+
+      <p class="fs-6">If you are an NRI looking to borrow a personal loan, these are the documents that you will need to submit to the lender: </p>
+
+      <ul>
+        <li class="h6">Copy of your Passport</li>
+        <li class="h6">Visa Copy</li>
+        <li class="h6">Your official Email ID or the Email ID of the HR</li>
+        <li class="h6">Bank Statements</li>
+        <li class="h6">Salary Certificate or salary slips</li>
+        <li class="h6">NRO/NRE bank statements of the last 6 Months</li>
+        <li class="h6">Proof of Identity, Residence, Income, and Assets</li>
+        <li class="h6">Recent passport-size Photographs of yourself and the guarantors</li>
+     </ul>
+
+      <!-- ----------Personal Loan Fees and Charges---------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Personal Loan Fees and Charges</h5>
+      <p class="fs-6">The following are <a href="#">the charges and fees of the personal loans </a>available from various institutions</p>
+      <ul>
+        <li class="h6">Copy of your Passport Processing fee</li>
+        <li class="h6"><a href="#">Goods and Services Tax</a>(GST)</li>
+        <li class="h6">Verification charges</li>
+        <li class="h6">Charges levied for issuing duplicate statement</li>
+        <li class="h6">Penalty for defaults</li>
+        <li class="h6">Penalty for pre-payment and part payment of loan</li>
+     </ul>  
+     <p class="fs-6">In addition to these, the lenders might also levy charges for documentation, stamping, credit administration, collection, and so on. The levy and the rates of these fees and charges differ from lender to lender. However, you can check the fees and charges which are levied by the top lenders in India before you apply for a personal loan.</p>
+
+
+      <!-- --------------Pre-Payment and Part Payment in Personal Loan-------------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Pre-Payment and Part Payment in Personal Loan</h5> 
+      <p class="fs-6">A personal loan is given for a stipulated time period. This period is known as the loan repayment tenure. After you have taken a loan, you are expected to pay the debt off by the end of the loan repayment tenure through EMIs. However, after availing a loan, if you decide to pay off your debt before the end of the loan repayment period, it is called pre-payment or foreclosure.</p>
+
+      <h6 class="h5 mt-5 mb-2 fw-bolder">Types of Pre-Payment:</h6> 
+
+      <p class="fs-6">There are 2 types of pre-payment. They are full pre-payment and part pre-payment and part payment.
+      </p>
+     
+      <h6 class="h5 mt-5 mb-2 fw-bolder"> 1. Full Pre-Payment:</h6> 
+      <p class="fs-6">If you are paying off the whole outstanding loan amount before the end of the loan repayment tenure, it is known as full pre-payment.
+      </p>
+
+      <h6 class="h6 mt-5 mb-2 fw-bolder">Advantages of full pre-payment:</h6> 
+      <ul class="mt-3">
+        <li class="h6">You can avoid paying hefty interest on your loan amount.</li>
+        <li class="h6">If you have the money to pay off your debt completely, you might as well get rid of the debt.</li>
+        <li class="h6">You can avoid paying pre-payment interest as well, if you have taken the loan from a lender who does not charge an interest on pre-payment of the loan.</li>
+      </ul> 
+
+      <h6 class="h6 mt-5 mb-2 fw-bolder">Disadvantages of Full Pre-Payment:</h6> 
+      <ul class="mt-3">
+        <li class="h6">If your lender charges a penalty on pre-payment of the loan amount, you might have to pay a big chunk of money for pre-paying your loan.</li>
+        <li class="h6">Before you foreclose a loan, check the other factors related to it. Foreclosing a personal loan means that you would be paying out a huge sum of money at once. This might not always be the best option.</li>
+      </ul> 
+
+
+
+      <!-- --------------Part pre-payment:-------------- -->
+
+
+      <h6 class="h5 mt-5 mb-2 fw-bolder">2. Part pre-payment:</h6> 
+      <p class="fs-6">If you are paying off a part of the outstanding loan amount before the end of the loan repayment tenure, it is known as part pre-payment</p>
+
+      <h6 class="h6 mt-4 mb-2 fw-bolder">Advantages of part pre-payment:</h6> 
+      <ul class="mt-3">
+        <li class="h6">You can choose to pay off a part of your outstanding loan amount if you have some readily available money.</li>
+        <li class="h6">Part paying your loan will reduce the outstanding principal amount which, in turn, will reduce the effective EMI amount.</li>
+        <li class="h6">The overall interest that you pay will also reduce significantly.</li>
+      </ul> 
+
+      <h6 class="h6 mt-4 mb-2 fw-bolder">Disadvantages of part pre-payment:</h6> 
+      <ul class="mt-3">
+        <li class="h6">If you do not make the part payment soon enough, you will not be able to maximize your savings.</li>
+        <li class="h6">If your lender charges a fee for <a href="#">part payment of personal loans</a> , you might have to spend a significant amount of money for the same.</li>
+      </ul> 
+
+
+      <!-- --------------Modes of Loan Payment or Repayment-------------- -->
+
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Modes of Loan Payment or Repayment</h5> 
+      <p class="fs-6">There are a number of repayment modes which are offered by lenders. Although these modes might differ from lender to lender, the most common modes of repayment can be summed up as follows:</p>
+
+      <div>
+        <p class="fs-6"><span class="h6">1. Electronic Clearance System (ECS):</span> The ECS or Electronic Clearance System is one of the most commonly used repayment methods. It is an electronic mode through which funds are transferred from one bank to another.</p>
+        <p class="fs-6"><span class="h6">2. Post Dated Cheques (PDCs):</span> Post Dated Cheques, as the name suggests, are cheques which are issued by you for a future date. The lender will use these cheques on the mentioned date to deposit or encash the amount mentioned on it.</p>
+        <p class="fs-6"><span class="h6">3. National Automated Clearing House:</span>The National Payment Corporation of India (NPCI) offers a program called NACH to all the banks and financial institutions. The NACH allows the processing of transactions in real time. This method can be used for your loan repayments.</p>
+        <p class="fs-6"><span class="h6">4. Debit mandate or standing instruction:</span> You can give an instruction to your bank to pay off a particular amount of money to another bank or bank account at a regular interval. This is known as standing instruction or debit mandate. Your bank will be paying off the stipulated amount towards the repayment of your loan on a regular basis through this system.</p>
+      </div>
+
+      <!-- --------------Different Types of Personal Loans in India-------------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Different Types of Personal Loans in India</h5> 
+      <p class="fs-6">One can use your loan for any purpose as long as it is legal. However, there are certain lenders who provide different loan products on the basis of the purpose which is mentioned by the borrower in the loan application. On the basis of utilization, these are the different <a href="#">types of personal loans </a> that can be availed in India:</p>
+
+      <table class="table table-bordered mt-3">
+        <thead class="table-dark">
+          <th class="col-5">Types</th>
+          <th class="col-7">Definition</th>
+        </thead>
+      <tbody>
+        <tr>
+          <td class="col-5 small-text"><a href="#">Personal Loan for Wedding</a></td>
+          <td class="col-7 small-text">As the name suggests, a loan which is offered particularly for the purpose of meeting the expenses of a wedding is a wedding loan.</td>
+        </tr>
+        <tr>
+          <td class="col-5 small-text"><a href="#">Personal Loan for Home Renovation</a></td>
+          <td class="col-7 small-text">A home renovation loan allows you to pay for repairs or renovations to your home.</td>
+        </tr>
+        <tr>
+          <td class="col-5 small-text"><a href="#">Personal Loan for Vacations</a></td>
+          <td class="col-7 small-text">A holiday loan is specially designed for vacations. You can avail a holiday loan and pay off the expenses on a later day through easy EMI payments.</td>
+        </tr>
+        <tr>
+          <td class="col-5 small-text"><a href="#">Personal Loan for Pensioners</a></td>
+          <td class="col-7 small-text">A loan which is specifically offered to pensioners is known as a pension loan.</td>
+        </tr>
+        <tr>
+          <td class="col-5 small-text"><a href="#">Personal Loan for Festivals</a></td>
+          <td class="col-7 small-text">Certain lenders offer a personal loan exclusively for festivals. If you are looking for a loan to make arrangements for a festival, you can apply for a festival loan.</td>
+        </tr>
+        <tr>
+          <td class="col-5 small-text"><a href="#">Medical Emergency Personal loans</a></td>
+          <td class="col-7 small-text">Medical loans are basically loans taken out for the purpose of financing medical care.</td>
+        </tr>
+      </tbody>
+      </table>
+
+      <p class="fs-6"><span class="h6">Note:</span>Do not forget to check the eligibility criteria for the different types of personal loans before you apply for one.</p>
+
+
+
+
+      <!-- --------------Buy Now Pay Later-------------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Buy Now Pay Later</h5> 
+      <p class="fs-6">Several retailers and banks are offering the <a href="#">Buy Now Pay Later</a> (BNPL)scheme, where borrowers who do not have a credit history can avail short-term credit. The credit-worthiness of the borrower is done with the help of analytics</p>
+
+
+
+
+      <!-- --------------Tips for Using Buy Now Pay Later-------------- -->
+
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Tips for Using Buy Now Pay Later</h5> 
+      <p class="fs-6">Some of the main tips that must be considered when you opt for BNPL are mentioned below:</p>
+      <ul class="mt-3">
+        <li class="h6">Know your budget.</li>
+        <li class="h6">Read the returns policy carefully.</li>
+        <li class="h6">Check all the penalties and fees.</li>
+        <li class="h6">Understand the terms and payment details.</li>
+      </ul>
+
+
+
+      <!-- --------------Personal Loan Top Up-------------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Personal Loan Top Up</h5> 
+
+      <p class="fs-6">A personal loan customer can avail an additional loan amount through the top-up facility over his/her existing loan. The loan amount will be subject to the terms and conditions set by the financial lender, while the interest rate may be the same as the existing loan or could be up to 1% more than the interest rate of the current loan. The tenure of the <a href="#">top-up personal loan</a> will be subject to that of the existing personal.</p>
+
+
+      <!-- --------------Key features and benefits-------------- -->
+
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Key features and benefits</h5> 
+
+      <ul class="mt-3">
+        <li class="h6">Existing personal loan customers are eligible for the loan top-up provided that they have paid their EMIs regularly and have no pending payments.</li>
+        <li class="h6">Quick or instant disbursal of the top-up loan amount.</li>
+        <li class="h6">Minimum documentation required.</li>
+        <li class="h6">Zero processing fee offered by a number of lenders.</li>
+        <li class="h6">No collateral required.</li>
+      </ul>
+
+      <!-- --------------Personal Loan Balance Transfer-------------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Personal Loan Balance Transfer</h5> 
+      <p class="fs-6">The <a href="#">personal loan balance transfer </a>facility gives customers the benefit of transferring their existing loan to another financial lender. This can be done if the other financial lender is offering a better interest rate, the tenure is a lot more flexible, they wish for a top up on their existing loan, etc.</p>
+
+      <!-- --------------Key features and benefits-------------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Key features and benefits</h5> 
+
+      <ul class="mt-3">
+        <li class="h6">Get a reduced interest rate on the existing loan amount.</li>
+        <li class="h6">Option to top-up the loan.</li>
+        <li class="h6">Avail flexible repayment options.</li>
+        <li class="h6">Avail benefits such as zero processing fee, waiver of last EMI benefit, etc.</li>
+        <li class="h6">To get better customer care service.</li>
+      </ul>
+
+
+      <!-- --------------How to Improve your Chances of Getting a Personal Loan?-------------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">How to Improve your Chances of Getting a Personal Loan?</h5> 
+
+      <ul class="mt-3">
+        <li class="fs-6"><span class="h6">Credit Clean-up: </span>One of the main factors taken into consideration by lenders is your credit score. Getting a personal loan is easier with a high credit score. If your score is low, you must check your reports to see if there are any errors. Sometimes, simple errors could have an adverse effect on your scores, and if you find any of these, you must report them to CIBIL.</li>
+
+        <li class="fs-6"><span class="h6">Rebalancing your income and debts: </span>Lenders ask for proof of income when you apply for personal loans in order to ascertain your debt-to-income ratio. Consider the sale of liquid assets like stocks or earning more through a part-time job to increase your annual income. Doing so will increase your debt-to-income ratio and increase your chances of getting a loan.</li>
+
+        <li class="fs-6"><span class="h6">Consider Co-signers/Guarantors: </span> If you are finding it hard to get a personal loan on your own accord, you can apply for one by adding a co-signer or guarantor. The person you choose as a guarantor must have a good credit score. Their main aim is to guarantee that you will repay the loan. However, they will also be liable to repay the loan themselves if you are unable to do so. Picking an individual with a credit score over 750 will considerably increase your chances of getting a personal loan.</li>
+
+        <li class="fs-6"><span class="h6">Limit Your Borrowing: </span>It can be risky to ask for more money than you require to meet your financial targets. Make sure that you calculate how much you need and apply only for that specific amount.</li>
+
+        <li class="fs-6"><span class="h6">Choose the Right Lender: </span> Every lender has their own requirements when it comes to credit scores and income. When looking for personal loans, pick a lender whose eligibility criteria you meet and apply accordingly. The problem with applying with multiple lenders is that each of them will <a href="#">check your credit score</a>, and each time your full credit report is pulled out, your credit score drops, albeit marginally.</li>
+      </ul>
+  
+
+      <!-- --------------How to Avoid Rejection of Personal Loan Applications?-------------- -->
+
+
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">How to Avoid Rejection of Personal Loan Applications?</h5> 
+
+      <p class="fs-6">The approval of a personal loan application depends on many factors. When you apply for a loan, you should make sure that you are fulfilling all the factors to ensure the approval of your loan application. The eligibility criteria for personal loans may vary from lender to lender. However, there are some common criteria which include the age of the applicant, his or her income, credit score, the status of employment, and so on. Before you apply for a loan, make sure that all the eligibility criteria are being fulfilled. This will help you avoid the rejection of your loan application. Although there are other options that you can resort to in case your loan application gets rejected, it is recommended to double-check before applying to <a href="#"> avoid the chances of rejection of loan application</a>.</p>  
+
+      <!-- --------------How to Check Personal Loan Status?-------------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">How to Check Personal Loan Status?</h5> 
+
+      <p class="fs-6">There are two main modes of checking the status of your loan application. Most lenders offer both online and offline modes through which you can keep tracking your loan status.
+      </p>  
+
+      <h6 class="h5 mt-3 mb-2 fw-bolder">Online Mode:</h6> 
+
+      <p class="fs-6">Most lenders offer the option of logging in to their official portal to help you track the status of your loan application. You can use the application number or reference number which is issued by the lender for this purpose. On the other hand, if you have applied for a loan through a third-party aggregator website such as Credit Bazaar, you can just log in to its web portal and track the status of your loan application directly.
+      </p> 
+
+      <h6 class="h5 mt-3 mb-2 fw-bolder">Offline Mode:</h6> 
+
+      <p class="fs-6">If you are not comfortable using the online platform, you can also track the status of your personal loan application through offline means. You can visit the branch office of your loan provider and check the status of your loan application. On the other hand, you can also connect with your lender over the telephone through their helpline or customer care number.<br/>
+        <br/>
+      For both these methods, you would be required to provide a few basic details such as your name and the application number or reference number. Head to Credit Bazaar to know more about how to track your personal loan status.
+
+      </p> 
+
+      <!-- --------------How to Get a Personal Loan Statement?-------------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">How to Get a Personal Loan Statement?</h5> 
+
+      <p class="fs-6">You can easily get in touch with your lender either through their online web portal or in person and request your loan statement. On most lender websites, you can just log in using your online credentials and provide your loan account number. Once you have tracked your account, you can request a statement which is either sent to your registered email ID or provided in the form of a PDF file which can be downloaded. Similarly, you can also visit the branch office of the lender from where you have availed the loan and place a request for a statement. In addition to that, you can raise a request for your personal loan statement through phone banking as well.</p>  
+
+
+
+      <!-- --------------Tips for Successful Personal Loan Application-------------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Tips for Successful Personal Loan Application</h5> 
+
+      <p class="fs-6">There are a few important things to keep in mind when searching for a personal loan. Check out a list of most helpful tips that will certainly help you with your personal loans.</p>  
+
+      <ol class="mt-3">
+        <li class="h6 mt-2">Assess the need for your loan</li>
+
+        <li class="h6 mt-2">Do proper research to get the best rate</li>
+
+        <li class="h6 mt-2">Check your credit history</li>
+
+        <li class="h6 mt-2">Review the fine print on your loan document carefully</li>
+
+        <li class="h6 mt-2">Choose your loan tenure by assessing your repayment ability</li>
+
+        <li class="h6 mt-2">Choose an affordable interest rate</li>
+
+        <li class="h6 mt-2">Select your loan amount as per your convenience</li>
+
+        <li class="h6 mt-2">Check your EMIs properly</li>
+
+        <li class="h6 mt-2">Compare the processing fee</li>
+
+        <li class="h6 mt-2">Select fixed or variable interest rate according to your preference</li>
+      </ol>
+  
+
+    <table class="table table-bordered mt-3">
+        <thead class="table-dark">
+          <th class="col-6 small-text-head">Do's</th>
+          <th class="col-6 small-text-head">Don'ts</th>
+        </thead>
+      <tbody>
+        <tr>
+          <td class="col-6 small-text">Do proper research before you apply for a loan</td>
+          <td class="col-6 small-text">Do not sign your loan documents without understanding every point</td>
+        </tr>
+        <tr>
+          <td class="col-6 small-text">Do read the fine print carefully</td>
+          <td class="col-6 small-text">Do not make multiple inquiries regarding loans from different banks</td>
+        </tr>
+        <tr>
+          <td class="col-6 small-text">Do save your money carefully when you are repaying</td>
+          <td class="col-6 small-text">Do not take a personal loan without any serious purpose</td>
+        </tr>
+        <tr>
+          <td class="col-6 small-text">Do pay your loan installment promptly every single time</td>
+          <td class="col-6 small-text">Do not be in a hurry to end your loan comparison process</td>
+        </tr>
+        <tr>
+          <td class="col-6 small-text">Do evaluate your credit score thoroughly</td>
+          <td class="col-6 small-text">Do not forget to pay your loan installments</td>
+        </tr>
+        <tr>
+          <td class="col-6 small-text">Do apply for an affordable loan amount</td>
+          <td class="col-6 small-text">Do not accept bad loan products</td>
+        </tr>
+      </tbody>
+      </table>
+
+      <!-- --------------Things to do After Closing a Personal Loan-------------- -->
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Things to do After Closing a Personal Loan</h5> 
+      <p class="fs-6">If you have recently paid off your personal loan (either repaid or foreclosed), you might have the idea that your obligation towards the loan is over. However, that is not the case. There are certain things that you should do after paying off your personal loan.</p>  
+
+      <ul class="mt-3">
+        <li class="fs-6 mt-2"><span class="h6">No Dues Certificate (NDC):</span>The No Dues Certificate (NDC) is issued by your lender once you pay off the debt. This is one of the most important documents that you should collect immediately after paying off your loan. It is also a wise decision to retain this document for an extended period of time. This certificate validates the repayment that you have made. Without this document, you cannot prove that you have paid off your debts. In case you are looking forward to taking another loan in the near future, you will need this document to prove that your previous loan has been paid off. Usually, this document is issued on spot by your lender if you are paying off the final amount through hard cash. If you are paying via check or NEFT or any other means, the lender will issue the NDC and will either send it to your registered address or will ask you to collect it from the branch office of the lender.</li>
+
+        <li class="fs-6 mt-2"><span class="h6">Statement of Account (SoA):</span>The Statement of Account or SoA, along with the NDC will help you prove that your debts have been completely paid off and have been paid on time. This is an optional document which is often issued by certain lenders. If your lender provides this document, you should consider getting it. However, you should also look for any sorts of discrepancies in the credit score. If you find something wrong, you can use the SoA to make the necessary changes to it.</li>
+
+        <li class="fs-6 mt-2"><span class="h6">Collection of unused cheques:</span>If you have some cheque leaves which have not been used, you should collect those as well. The collection of the No Dues Certificate and the unused cheque leaves, usually, marks the end of the closure process for the loan.</li>
+
+        <li class="fs-6 mt-2"><span class="h6">Check your credit score after closing the loan:</span>This is just a recommendation. It is not compulsory to check the credit score after the closure process ends. However, it is recommended that you check the score to make sure there are no differences in the score. If there are some chances of you availing another loan within 1 to 2 years of the closure of the current loan, it is highly recommended that you check the credit scores right after the closure of the loan.</li>
+      </ul>
+
+
+      <!-- --------------Personal Loan Disbursal-------------- -->
+
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Personal Loan Disbursal</h5> 
+      <p class="fs-6">Personal loan disbursal is basically the process of the financial lender remitting the loan amount in the bank account of the customer. The loan disbursal takes place after the submission of relevant documents of the customer and the verification and approval of the financial lender. Financial lenders offer <a href="#">personal loan disbursal's</a> in a few seconds, while others take a few hours to a few days to disburse the loan amount following approval.</p>  
+
+      <!-- --------------How can I repay my personal loan?-------------- -->
+
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">How can I repay my personal loan?</h5> 
+
+      <p class="fs-6">There are a number of ways by which you can repay your loan. These include:</p>
+
+      <ul class="mt-3">
+        <li class="h6 mt-2">Via Electronic Fund Transfer (EFT)</li>
+        <li class="h6 mt-2">By cheque</li>
+        <li class="h6 mt-2">By physically paying at a branch of the lender</li>
+        <li class="h6 mt-2">Via standing instruction for automatic deduction from your account</li>   
+      </ul>
+
+
+      <!-- --------------FAQs on Personal Loan-------------- -->
+
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">FAQs on Personal Loan</h5> 
+
+      <ol class="mt-3">
+        <li class="h6 mt-2">What is a Personal loan?</li>
+
+        <li class="h6 mt-2">A Personal loan is a type of unsecured loan that you can borrow from a bank or financial institution if you require funds to pay for your financial needs.How does a personal loan work?</li>
+
+        <li class="h6 mt-2">You borrow a loan when you require credit. Once you submit your loan application to a lender for a personal loan, the lender verifies and approves it. Post this, the loan amount is disbursed into your bank account. Once you receive the loan amount, you will need to repay the lender via EMIs for the loan repayment tenure.What is the maximum amount of loan I can get?</li>
+
+        <li class="h6 mt-2">The maximum amount of loan depends on your monthly income. In India, there are lenders who offer up to Rs.40 lakh.What is a prepayment and how does it help in repaying my loan?</li>
+
+        <li class="h6 mt-2">If you happen to get some extra money, you can pay it towards your loan even before the EMIs are due. This is called a prepayment. Every prepayment you make goes towards reducing the outstanding principal component of your loan. And since the principal reduces, your interest cost will also reduce. Also, your tenure gets shortened this way, helping you pay off the loan ahead of time.What is the CIBIL score required to avail a personal loan?</li>
+
+        <li class="h6 mt-2">Usually, banks will require your CIBIL score to be above 720 to provide a personal loan. In case your credit score is less, your application may be rejected or the personal loan will be provided with high interest rates.What should I do if my personal loan application is rejected?</li>
+
+        <li class="h6 mt-2">If your personal loan application is rejected, then it is mostly either due to your low credit score or you not meeting the eligibility criteria. If you meet the eligibility criteria and improve your credit score, your personal loan application will not be rejected.Can you get a mortgage loan if you have a personal loan?</li>
+
+        <li class="h6 mt-2">Yes, you can, but it depends on your income and your ability to pay the EMIs of both the home loan and the personal loan.What can a personal loan be used for?</li>
+
+        <li class="h6 mt-2">A personal loan can be used for holidays, to start a small business, purchasing consumer goods, to purchase a vehicle, to pay friends and family, to pay medical bills, and debt consolidation.What is pre-approved personal loan?</li>
+
+        <li class="h6 mt-2">A pre-approved loan is one where the customer can apply for a loan and possibly doesn’t need to submit documents or go through the verification process as he/she shares a healthy relationship with the bank as an existing customer and has a clean repayment record.What is Standing Instruction (SI)?</li>
+
+        <li class="h6 mt-2">Standing instructions are basic instructions given by a bank customer to the bank to make a payment to another bank account or the bank at regular intervals or as a one-time payment, as per the requirement. As per the instructions, the money in the bank account of the customer will be debited and remitted to another account as per the specified time of the customer.Do personal loans offer tax exemptions?</li>
+
+        <li class="h6 mt-2">Personal loans only offer tax exemptions if you are using the loan amount for renovation of your house, to pay for educational expenses, or to expand your business.Can I get a personal loan during Covid-19?</li>
+
+        <li class="h6 mt-2">Yes, some of the leading banks in India are offering COVID-19 personal loans. If you wish to apply for a personal loan, you can do so by applying for it online on the bank’s official website. Applying online is recommended since the process is fast and hassle-free and allows you to maintain the social distancing norm laid down by the Government of India. The interest rates offered will vary from bank to bank and hence it is recommended you compare various personal loans and then avail the one which you feel will be suitable for you.How is my prepayment fee calculated?</li>
+
+        <li class="h6 mt-2">This depends on your lender. Some lenders charge you a fixed fee for each prepayment. Others may charge you a percentage of the amount outstanding or a percentage of the amount prepaid.Do personal loan pre-closures have certain terms and conditions?</li>
+
+        <li class="h6 mt-2">Yes, financial lenders have their terms and conditions when it comes to personal loan foreclosures. Usually, financial lenders allow loan pre-closures only after the payment of 12 EMIs and charge a foreclosure charge + GST on the outstanding loan amount.How can I get my address changed in my Personal loan account?</li>
+
+        <li class="h6 mt-2">You can change your address of residence linked to your Personal loan account via your net banking account or by visiting the bank branch. At the bank branch, you will have to fill in the address-change form and submit relevant address proof documents that are authorized or attested by the State or Central Government.What is the minimum salary that an individual is required to earn to apply for a personal loan?</li>
+
+        <li class="h6 mt-2">The minimum salary requirement will vary from lender to lender. Most lenders, however, will require you to earn at least Rs.15,000. If you reside in a metropolitan city, you may have to earn between Rs.20,000 and Rs.25,000.What should I do if I want to repay my loan (partially or in full) during the loan repayment term?</li>
+
+        <li class="h6 mt-2">Most lenders will allow you to make prepayments or pre-close your loan during the loan repayment term. You will, however, have to pay a nominal charge to the lender for doing the same. Keep in mind that most lenders will only allow you to prepay or pre-close your loan after 1 year of borrowing the loan. If you want to prepay/pre-close your loan, ensure that you inform your lender of the same.How do I cancel my personal loan after the loan is disbursed?</li>
+
+        <li class="h6 mt-2">You can cancel your loan application before the loan amount is disbursed into your account by submitting a written application for the same. You will also need to pay the loan cancellation fee to the lender. Once the loan amount has been disbursed into your account, most lenders will not allow you to cancel it. You can, however, pre-close the loan. If you are thinking of canceling your loan because you pay a high interest rate on your loan, you can consider transferring your outstanding loan balance to another bank or financial institution.How often should I repay my Personal loan?</li>
+
+        <li class="h6 mt-2">This depends on the lender you choose. Normally, every personal loan repayment is calculated on the basis of a monthly repayment pattern. It includes the principal and interest components that you’re expected to repay each month.Are there any charges for prepaying my personal loan?</li>
+        
+
+        <li class="h6 mt-2">Some lenders may ask you to pay a fee if you want to prepay a part of your loan. Others may either waive the fee or may not have prepayment charges at all.When will a bank reject my personal loan application?</li>
+
+        <li class="h6 mt-2">A bank can reject your personal loan application if you apply for a loan for which you are not eligible. It can also reject your application if you fail to submit the documents it requires.How to Track Personal Loan Application status?</li>
+
+        <li class="h6 mt-2">Credit Bazaar.com offers its loan applicants an active tracking tool through both email and SMS allowing them to track daily updates of their loan application.How do I obtain a Duplicate Repayment Schedule for my Personal loan account?</li>
+
+        <li class="h6 mt-2">You can request the bank for a personal loan duplicate repayment schedule either via your net banking account or by calling the customer care unit or by writing to them via your registered email ID.What happens if a personal loan is not paid?</li>
+
+        <li class="h6 mt-2">If the borrower fails to pay the EMI, the bank charges a penal interest on the overdue amount. Financial lenders usually charge a penal interest of 2%-3% per month of the overdue amount.Where can I get a personal loan with bad credit and no checking account?</li>
+
+        <li class="h6 mt-2">It could be hard to get a traditional personal loan from a bank with a poor credit score and no checking account. However, certain lenders offer types of personal loans such as payday loans for those with a poor credit score. That said, the interest charged will be quite high.Can I pay more than my EMI in personal loan?</li>
+
+        <li class="h6 mt-2">Over your EMI, after a certain period following the disbursement of the loan, you can make a part-payment towards the loan. The part payment will further deduct the outstanding principal amount of the loan.What is the easiest personal loan to get?</li>
+
+        <li class="h6 mt-2">Compare and apply online for personal loans at Credit Bazaar and get an instant assistant from them.How much loan can I get if I earn a monthly salary of Rs.60,000?</li>
+
+        <li class="h6 mt-2">For personal loans, most lenders fix the minimum monthly income requirement between Rs.15,000 and Rs.25,000. Thus, if you have a monthly income of Rs.60,000, you can be fairly certain that you won’t find it difficult to borrow a loan. The exact amount that you will be offered will, however, vary based on your repayment capacity, debt-to-income ratio, the lender’s terms and conditions, etc.How much loan can I get if my salary is Rs.25,000?</li>
+      </ol>
+  
+      <p class="h6">With a monthly salary of Rs.25,000, you are likely to be eligible to borrow a loan. However, the lender will also check if you have any other outstanding loans, your credit score, repayment capacity, etc. before deciding how much you can borrow. You can use a personal loan eligibility calculator tool to know how much you are eligible to borrow with a monthly salary of Rs.25,000.
+        <br/>
+        <br/>
+      A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+
+      
+      <div>
+
+        <button type="button" class="collapsible mt-4 btn-text">Important Personal Loan Pages</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+        <button type="button" class="collapsible mt-4 btn-text">Personal Loans by Bank</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+        <button type="button" class="collapsible mt-4 btn-text">Personal Loan Eligibility by Banks</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+
+        <button type="button" class="collapsible mt-4 btn-text">Personal Loan Interest Rates by Bank</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+        <button type="button" class="collapsible mt-4 btn-text">Personal Loan EMI Calculator by Bank</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+        <button type="button" class="collapsible mt-4 btn-text">Personal Loan Customer Care by Bank</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+         <button type="button" class="collapsible mt-4 btn-text">Personal Loan Status Track by Bank</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+         <button type="button" class="collapsible mt-4 btn-text">Personal Loan Articles</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+         <button type="button" class="collapsible mt-4 btn-text">Other Loans</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+      
+      </div>
+
+
+      <!-- --------------Personal Loan News-------------- -->
+
+
+      <h5 class="h3 mt-5 mb-2 fw-bolder">Personal Loan News</h5> 
+
+      <ul class="mt-4">
+        <li class="mt-3">
+          <h6 class="h6">RBI hikes the repo rate by 40 basis points</h6>
+          <p class="fs-6">The Reserve Bank of India (RBI) increased the benchmark lending rate or repo rate by 40 basis points (bps) to 4.40% on Wednesday, the first increase since August 2018. This was also the first time the Monetary Policy Committee (MPC) increased the repo rate on an unplanned basis. The decision was made to keep inflation under control, which has been persistently over the target of 6% for the previous three months.
+          The RBI's action, however, would have an impact on people who have borrowed house loans and vehicle loans. Meanwhile, the MPC, led by RBI Governor Shaktikanta Das, increased the amount of deposits required by banks to keep a cash reserve by 50 basis points to 4.5% in order to extract Rs.87,000 crore of liquidity from the banking sector. The CRR increase will take effect on 21 May.
+            <br/>
+          5 May 2022
+          </p>
+        </li>
+
+
+        <li class="mt-3">
+          <h6 class="h6">DMI Finance will provide personal loans (digital) to those who use Google Pay</h6>
+          <p class="fs-6">DMI Finance Private Limited (DMI) had announced the launch of its personal loan product on the platform, Google Pay. This will be a reliable credit accessible for all pre-qualified users.
+            <br/>
+          The product adds to Google Pay’s customer experience and the process of the digital loan disbursal. All users who are eligible and are pre-qualified can use the product.
+            <br/>
+          18 February 2022
+          </p>
+        </li>
+
+         <li class="mt-3">
+          <h6 class="h6">The Tata group to receive a loan commitment from a consortium led by SBI for Air India</h6>
+          <p class="fs-6">The State Bank of India (SBI) led consortium is going to offer Tata Group with loans so that Air India can continue their operations smoothly. In October 2021, Tata Group won the bid to acquire Air India along with Air India Express as well as a 50% stake in AISATS. Now it is soon going to formally take over the airline company.
+            <br/>
+          The consortium led by SBI has agreed to provide working capital loans and term loans based on the requirements of Air India. Apart from SBI, there are several other large lenders which include Bank of Baroda, Punjab National Bank, and Union Bank of India.
+            <br/>
+          Talace Private Limited, Tata Sons’ subsidiary won the bid to acquire Air India on 8 October 2021. It had offered Rs.18,000 crore, including Rs.2,700 crore in cash, which has been paid to the government.
+          The term loans will help Talace to retire high-cost borrowings of Air India. According to the agreement, Tata Group will also retain all the employees of Air India for a year.
+            <br/>
+          31 January 2022
+          </p>
+        </li>
+
+
+         <li class="mt-3">
+          <h6 class="h6">RBI data shows growth in bank credit at 7.14%</h6>
+          <p class="fs-6">According to RBI’s data, bank credit grew to Rs.111.64 lakh crore, increasing by 7.14%. Bank loans were at Rs.104.19 crore for the fortnight that ended on 6 November 2021. The data was released by the RBI on 17 November 2021. For the previous fortnight that ended on 22 October 2021, bank credit had increased by 6.84%. In the last financial year, bank credit had grown by 5.56%.
+            <br/>
+          23 November 2021
+          </p>
+        </li>
+
+
+       
+      </ul>
+
+
+
+
+
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- ------------------------------------------------------------------------- ------------------------------------footer ---------------------------- ------------------------------------------------------------------------------------->
+
+
+  <section class="footer-section container-fluid" style="padding: 0px; margin: 0px; width: 100%;">
+
+  <div class="footer-main-div">
+    <div class="row" >
+      <div class="col-md-2 col-12">
+        <div class="footer-logo-div">
+          <img src="../../Images/logo-1.svg" class="footer-logo">
+        </div>
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Credit Card</h4>
+          <a href="#"><p class="footer-content-p mt-4">Best Credit Cards</p></a>
+          <a href="#"><p class="footer-content-p">Check your Credit Score</p></a>
+          <a href="#"><p class="footer-content-p">Cibil</p></a>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Loan</h4>
+          <a href="#"><p class="footer-content-p mt-4">Personal Loan</p></a>
+          <a href="#"><p class="footer-content-p">Home Loan</p></a>
+          <a href="#"><p class="footer-content-p">Educational Loan</p></a>
+          <a href="#"><p class="footer-content-p">Business Loan</p></a>
+          <a href="#"><p class="footer-content-p">Vehicle Loan</p></a>
+          <a href="#"><p class="footer-content-p">Gold Loan</p></a>
+        </div>  
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Insurance</h4>
+          <a href="#"><p class="footer-content-p mt-4">Life Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Home Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Health Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Vehicle Insurance</p></a>
+          <a href="#"><p class="footer-content-p">Property Insurance</p></a>
+        </div>  
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Investment</h4>
+          <a href="#"><p class="footer-content-p mt-4">Mutual Funds</p></a>
+          <a href="#"><p class="footer-content-p">Fixed Deposit</p></a>
+          <a href="#"><p class="footer-content-p">Recurring Deposit</p></a>
+          <a href="#"><p class="footer-content-p">Demat & Trading</p></a>
+          <a href="#"><p class="footer-content-p">Government Schemes</p></a>
+        </div>  
+      </div>
+
+      <div class="col-md-2 col-12">
+        <div class="footer-content-div">
+          <h4 class="footer-content-h4">Subscribe Newsletter</h5>
+            <div class="footer-div-form mt-4">
+              <input type="text" class="footer-input" placeholder="Enter Your Email">
+              <button class="footer-btn">Get Start</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <div class="profile-icon-section">
+      <div class="profile-icon-content-div">
+        <h6 class="profile-icon-h6">Follow Us :</h6>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-facebook-f "></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="profile-icon-div">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div class="footer-policy-section">
+      <div class="footer-policy-div">
+        <h6 class="footer-policy-h6">Copyright &#169;  2022 Cloudin Software Tech Labs</h6>
+      </div>
+      <div class="footer-policy-div">
+        <h6 class="footer-policy-h6">
+          Designed by <span class="footer-policy-span">Cloudin Software Tech Labs</span>
+        </h6>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script defer>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}                           
+  </script>
+</body>
+</html>

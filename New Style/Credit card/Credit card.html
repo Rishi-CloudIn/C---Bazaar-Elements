@@ -36,7 +36,8 @@
   background-color: #fff;
   width: 100%;
   height: 60px;
-  position: sticky;
+  position: fixed;
+  top: 0%;
   z-index: 1;
 }
 
@@ -162,7 +163,7 @@
   background-color: #fff;
   width: 100%;
   height: 60px;
-  position: relative;
+  position: fixed;
 }
 
 .nav-logo {
@@ -613,6 +614,51 @@ a {
   text-decoration: none;
 }
 
+/* collapsible */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: rgb(108, 108, 108);
+  color: #fff;
+  height: auto;
+  cursor: pointer;
+  padding: 7px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+
+.active, .collapsible:hover {
+  background-color: rgb(108, 108, 108);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  border: 2px solid black;
+  color: black;
+  border-radius: 10px;
+}
+
+
+
 @media screen and (max-width: 576px) {
   .small-text-head {
   font-size: 14px !important;
@@ -621,18 +667,20 @@ a {
 .small-text {
   font-size: 12px;
 }
+
+.btn-text {
+  font-size: 10px !important;
 }
 
 
-
-
-
-
-
+.btn-text-p {
+  font-size: 12px !important;
+}
+}
 
   </style>
 
-  <title>C-Bazaar</title>
+  <title>Credit card</title>
 </head>
 <body>
     
@@ -646,123 +694,8 @@ a {
           <div class="nav-scroll">
 
           <div class="nav-logo-div">
-            <img src="../../Images/logo-1.svg" alt="logo" class="nav-logo">          
+            <img src="https://cbazzar.cloudinlabs.com/storage/icons/C_Bazaar.svg" alt="logo" class="nav-logo">          
           </div>
-
-<!-- 
-          <div class="nav-button-div">
-            <button class="nav-btn">Log Out</button>
-          </div> -->
-
-<!-- 
-          <div class="hamburger-menu">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div> -->
-
-<!-- 
-          <div class="nav-ul-div">
-            <ul class="nav-ul" id="nav-ul">
-              <li class="nav-li nav-active">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Credit Report</p>
-                </a>
-              </li>
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Credit Cards</p>
-                </a>
-              </li>
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Loans</p>
-                </a>
-              </li>
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Loans</p>
-                </a>
-              </li>
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Loans</p>
-                </a>
-              </li>
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Loans</p>
-                </a>
-              </li>
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Loans</p>
-                </a>
-              </li>
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Loans</p>
-                </a>
-              </li>
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Loans</p>
-                </a>
-              </li>
-
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Loans</p>
-                </a>
-              </li>
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Loans</p>
-                </a>
-              </li>
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Loans</p>
-                </a>
-              </li>
-              <li class="nav-li">
-                <a href="#">
-                  <img src="./Images/gearGreen.svg" class="nav-icon">
-                  <p class="nav-p">Loans</p>
-                </a>
-              </li>
-
-
-            <div class="quick-content-div">
-              <div class="quick-card">
-                <h6 class="quick-h6">Get a quick call with C-Bazaar</h6>
-                <div class="quick-card-1">
-                  <img src="./Images/gearGreen.svg" class="quick-icon">
-                  <p class="quick-p">9361087223</p>
-                </div>
-                <div class="quick-card-1">
-                  <img src="./Images/gearGreen.svg" class="quick-icon">
-                  <p class="quick-p">abc@gmail.com</p>
-                </div>
-              </div>
-            </div>
-            
-            </ul>
-
-          </div>
- -->
 
         </div>
       </div>
@@ -774,7 +707,7 @@ a {
 
   <!-- ------------------------------------------------------------------------- ------------------------------------ body section ---------------------------- ------------------------------------------------------------------------------------->
 
-  <section class="container">
+  <section class="container mt-5 pt-md-4 pt-2">
     <div class="credit-cart-report px-sm-0 px-3">
       <h2 class="h2 fw-bold mt-5 mb-2">Credit Card - Compare & Apply Credit Cards Online</h2>
       <p class="text">Apply for a wide range of Credit Cards on Credit Bazaar starting at 0 annual fees, offering many benefits such as shopping rewards, cashback, & discounts.
@@ -1387,29 +1320,41 @@ a {
       </div>
       
       </div>
-      
-      <div class="question-div mt-3">
-        <h6 class="h6">+Types of Credit Card</h6>
-      </div>
 
-       <div class="question-div">
-        <h6 class="h6">+Credit Card by Banks</h6>
-      </div>
+        <div>
 
-       <div class="question-div">
-        <h6 class="h6">+Articles on Credit Card</h6>
-      </div>
+        <button type="button" class="collapsible mt-4 btn-text">Types of Credit Card</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
 
-        <div class="question-div">
-        <h6 class="h6">+Credit Card Customer Care</h6>
-      </div>
-      
-      <div class="question-div">
-        <h6 class="h6">+Credit Card Bill Payment</h6>
-      </div>
+        <button type="button" class="collapsible mt-4 btn-text">Credit Card by Banks</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
 
-      <div class="question-div">
-        <h6 class="h6">+Credit Card Eligibility</h6>
+        <button type="button" class="collapsible mt-4 btn-text">Articles on Credit Card</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+
+        <button type="button" class="collapsible mt-4 btn-text">Credit Card Customer Care</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+        <button type="button" class="collapsible mt-4 btn-text">Credit Card Bill Payment</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+        <button type="button" class="collapsible mt-4 btn-text">Credit Card Eligibility</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+       
       </div>
 
 
@@ -1809,30 +1754,41 @@ The paper has proposed the replacement of the zero fees on Unified Payments Inte
 
       <h5 class="h4 fw-bolder mt-5">Apply for Credit Card</h5>
  
-      <div class="question-div mt-3">
-        <h6 class="h6">+Types of Credit Card</h6>
-      </div>
+       <div>
 
-       <div class="question-div">
-        <h6 class="h6">+Credit Card by Banks</h6>
-      </div>
+        <button type="button" class="collapsible mt-4 btn-text">Types of Credit Card</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
 
-       <div class="question-div">
-        <h6 class="h6">+Articles on Credit Card</h6>
-      </div>
+        <button type="button" class="collapsible mt-4 btn-text">Credit Card by Banks</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
 
-        <div class="question-div">
-        <h6 class="h6">+Credit Card Customer Care</h6>
-      </div>
-      
-      <div class="question-div">
-        <h6 class="h6">+Credit Card Bill Payment</h6>
-      </div>
+        <button type="button" class="collapsible mt-4 btn-text">Articles on Credit Card</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
 
-      <div class="question-div">
-        <h6 class="h6">+Credit Card Eligibility</h6>
-      </div>
 
+        <button type="button" class="collapsible mt-4 btn-text">Credit Card Customer Care</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+        <button type="button" class="collapsible mt-4 btn-text">Credit Card Bill Payment</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+        <button type="button" class="collapsible mt-4 btn-text">Credit Card Eligibility</button>
+        <div class="content">
+          <p class="h6 py-2 btn-text-p">A GST rate of 18% will be applicable on banking services and products from 01 July, 2017.</p>
+        </div>
+
+       
+      </div>
 
       <!-- --------News About Credit Cards-------- -->
 
@@ -2004,7 +1960,22 @@ The paper has proposed the replacement of the zero fees on Unified Payments Inte
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script defer>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}                           
+  </script>
 
 </body>
 </html>
