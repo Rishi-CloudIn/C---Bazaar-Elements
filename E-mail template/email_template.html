@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <!-- google fonts -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  /* background-color: #fdfffd; */
+}
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* general style */
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+.mail-h5 {
+  color: #20bf55;
+}
+
+.mail-logo-div {
+  width: auto;
+  height: auto;
+  max-width: 120px;
+ 
+}
+
+.mail-logo {
+  width: 100%;
+}
+
+.mail-asset-div {
+     display: inline-block;
+     height: 70px;
+     width: 70px;
+     border-radius: 100%;
+     /* border: 2px solid black; */
+     text-align:center;
+   }
+
+.mail-asset {
+     width: 100%;
+     height : 100%;
+     object-fit: contain;
+    }
+
+.mail-asset-h6 {
+  font-size: 12px;
+}
+
+.social-icon-div {
+  width: 25px;
+  margin-right: 20px;
+} 
+
+
+@media screen and (max-width: 768px) {
+    .mail-asset-div {
+     display: inline-block;
+     height: 60px;
+     width: 60px;
+     border-radius: 100%;
+     /* border: 2px solid black; */
+     text-align:center;
+   }
+}
+
+@media screen and (max-width: 576px) {
+    .mail-asset-div {
+     display: inline-block;
+     height: 40px;
+     width: 40px;
+     border-radius: 100%;
+     /* border: 2px solid black; */
+     text-align:center;
+   }
+.mail-asset-h6 {
+  font-size: 9px;
+}
+  .mail-logo-div {
+    margin: 20px auto;
+  }
+  .mail-head{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .social-icon-main-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+   .social-icons {
+    margin-top: 10px;
+   }
+}
+
+
+  </style>
+
+  <title>E-mail template</title>
+</head>
+<body>
+  
+        <section class="mail-section container">
+          <div class="mail-content-div my-md-5 my-3 p-sm-0 p-3">
+            <div class="row">
+              <div class="mail-head d-flex justify-content-between" >
+                <div class="mail-head-1">
+                  <h3 class="h5 fw-bold">Hi,</h3>
+                  <h3 class="h5 fw-bold mail-h5">Welcome to Credit Bazaar</h3>
+                </div>
+                <div class="mail-head-1 mail-logo-div d-flex align-items-center">
+                  <img src="https://cbazzar.cloudinlabs.com/storage/icons/C_Bazaar.svg" alt="logo" class="img-responsive mail-logo">
+                </div>
+              </div>
+
+              <div class="mail-body mt-4">
+                <h5 class="h5 fw-bold">Trustworthy app is now in your hand!</h5>
+                <ul class="mt-3">
+                  <li class="h6 mt-3 text-secondary">Let's admit, the adoption of Technology in Finance management through credit bazaar app</li>
+                  <li class="h6 mt-3 text-secondary">The credit bazaar app is an User-Friendly Finance Management app for Individuals and Business organisations from small scale to large scale.</li>
+                  <li class="h6 mt-3 text-secondary">A special feature we provide that you cannot see anywhere is just find it down</li>
+                </ul>
+
+                <p class="mt-4"><q class="mail-h5 h6 fw-bold"> You can upload all the verification documents using our web and Mobile app portal itself </q></p>
+              </div>
+
+              <div class="mail-body mt-3">
+                <h5 class="h5 fw-bold">How does it help?</h5>
+                <ul class="mt-3">
+                  <li class="h6 mt-3 text-secondary">Get cash in hand by spending a minute and save your valuable time</li>
+                  <li class="h6 mt-3 text-secondary">We take a promise that Your personal information is 100% secured and safe</li>
+                  <li class="h6 mt-3  text-secondary">A quick responsive app for the applicant</li>
+                  <li class="h6 mt-3 text-secondary">User instructions is featured inside to make it simple</li>
+                  <li class="h6 mt-3 text-secondary">User friendly help option is provided</li>
+                </ul>
+              </div>
+
+               <div class="mail-body mt-4">
+                <h5 class="h5 fw-bold">App is Featured with all kind of loan options</h5>
+                <div class="mail-asset-body d-flex  flex-wrap justify-content-center">
+                  <div class="mail-asset-div mx-md-5 mx-4 my-5">
+                    <img src="./mail_assets/Business Loan.svg" alt="img" class="mail-asset">
+                    <h6 class="h6 mail-asset-h6 text-center mt-2">Business loan</h6>
+                  </div>
+                  
+                  <div class="mail-asset-div mx-md-5 mx-4 my-5">
+                    <img src="./mail_assets/Educational Loan.svg" alt="img" class="mail-asset">
+                    <h6 class="h6 mail-asset-h6 text-center mt-2">Education Loan</h6>
+                  </div>
+
+                  <div class="mail-asset-div mx-md-5 mx-4 my-5">
+                    <img src="./mail_assets/Gold Loan.svg" alt="img" class="mail-asset">
+                    <h6 class="h6 mail-asset-h6 text-center mt-2">Gold loan</h6>
+                  </div>
+
+                  <div class="mail-asset-div mx-md-5 mx-4 my-5">
+                    <img src="./mail_assets/Home Loan.svg" alt="img" class="mail-asset">
+                    <h6 class="h6 mail-asset-h6  text-center mt-2">Home loan</h6>
+                  </div>
+                </div>
+
+
+                <div class="mail-asset-body mb-4 d-flex  flex-wrap justify-content-center">
+
+                  <div class="mail-asset-div mx-md-5 mx-4 my-5">
+                    <img src="./mail_assets/Insurance.svg" alt="img" class="mail-asset">
+                    <h6 class="h6 mail-asset-h6 text-center  mt-2">Insurance loan</h6>
+                  </div>
+
+                  <div class="mail-asset-div mx-md-5 mx-4 my-5">
+                    <img src="./mail_assets/Personal Loan.svg" alt="img" class="mail-asset">
+                    <h6 class="h6 mail-asset-h6 text-center  mt-2">Personal loan</h6>
+                  </div>
+
+                  <div class="mail-asset-div mx-md-5 mx-4 my-5">
+                    <img src="./mail_assets/Vehicle loan.svg" alt="img" class="mail-asset">
+                    <h6 class="h6 mail-asset-h6 text-center  mt-2">Vehicle loan</h6>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="mail-body mt-4">
+                <h5 class="h6 ">Trust Credit bazaar app ,Reduce your efforts by one touch and get money on hand full !</h5>
+
+                <!-- <div class="d-flex justify-content-end"> -->
+                   <h3 class="h5 mt-4 fw-bold mail-h5 text-end">Best regards ....</h3>
+                  <h4 class="h4 mt-1 fw-bold text-end">C-Bazzar Team</h4>
+                <!-- </div> -->
+               
+                
+                <hr>
+
+                <div class="social-icon-main-div d-flex mt-4 align-items-center justify-content-center">
+                  <h5 class="h6 mb-0 fw-bold text-secondary me-4">Stay connect with us :</h5>
+                  <div class="social-icons d-flex justify-content-start">
+                    <div class="social-icon-div">
+                      <a href="https://www.facebook.com/CreditBazzar/" target="_blank">
+                        <img src="./mail_assets/social_icons/Facebook.svg" alt="logo" class="social-icon" >
+                      </a>
+                    </div>
+                     <div class="social-icon-div">
+                      <a href="https://www.instagram.com/cbaz_aar/" target="_blank">
+                        <img src="./mail_assets/social_icons/Instagram.svg" alt="logo" class="social-icon" >
+                      </a>
+                    </div>
+                     <div class="social-icon-div">
+                      <a href="#">
+                        <img src="./mail_assets/social_icons/LinkedIn.svg" alt="logo" class="social-icon">
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
