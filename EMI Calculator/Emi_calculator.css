@@ -233,3 +233,11 @@ li {
 	font-size: medium;
 	font-weight: 700;
 }
+
+/* table */
+
+.hiddenRow {
+	padding: 0 !important;
+}
+
+

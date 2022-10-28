@@ -232,13 +232,13 @@
 
         <div class="row">
           <h4 class="emi-calculator-h5">Break-up of all total amount payable</h4>
-          <div class="col-6">
+          <div class="col-md-6 col-12">
             <div class="loan-chart-div-1">
               <div class="loan-chart"></div>
             </div>
           </div>
 
-          <div class="col-6">
+          <div class="col-md-6 col-12">
             <div class="loan-chart-div-main">
               <div class="loan-chart-div-2">
                 <div class="loan-chart-content d-flex flex-row align-items-center">
@@ -260,9 +260,74 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
+
+
+        <div class="my-4 table-responsive-md">
+          <h4 class="emi-calculator-h5 mb-4">EMI Statement</h4>
+          <table class="table table-condensed text-center table-bordered">
+            <thead>
+              <tr>
+                <th scope="col" class="table-dark">Year</th>
+                <th scope="col" class="table-warning">Principal Paid</th>
+                <th scope="col" class="table-success">Interest Paid</th>
+                <th scope="col" class="table-info">Total Payment</th>
+                <th scope="col" class="table-danger">Outstanding Loan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-bs-toggle="collapse" href="#collapseExample" role="button">
+                <td>2023</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+              </tr>
+              <tr class="collapse table-secondary" id="collapseExample">
+                <td>jan</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+              </tr>
+
+              <!-- 2 -->
+              <tr data-bs-toggle="collapse" href="#collapseExample-1" role="button">
+                <td>2023</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+              </tr>
+
+              <tr class="collapse table-secondary" id="collapseExample-1">
+                <td>jan</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+              </tr>
+              <!-- 3 -->
+              <tr data-bs-toggle="collapse" href="#collapseExample-3" role="button">
+                <td>2023</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+              </tr>
+              <tr class="collapse table-secondary" id="collapseExample-3">
+                <td>jan</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+                <td>₹1,03,205</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
       </div>
     </section>
 
@@ -285,22 +350,14 @@
 
 
 
-
-
-
-
-
-
     <script>
-      let x = document.querySelectorAll( ".myCur" );
-      for ( let i = 0, len = x.length; i < len; i++ )
-      {
-        let num = Number( x[ i ].innerHTML )
-          .toLocaleString( 'en' );
-        x[ i ].innerHTML = num;
-        x[ i ].classList.add( "currSign" );
-      }
+      var myCollapse = document.getElementById( 'myCollapse' );
+      var bsCollapse = new bootstrap.Collapse( myCollapse, {
+        toggle: false
+      } )
     </script>
+
+
 
 
 
