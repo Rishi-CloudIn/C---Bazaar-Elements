@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- bootstrap
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
 
     <!-- google fonts -->
 
@@ -143,10 +141,12 @@
       .mail-asset-div {
         text-align: center;
         display: inline-block;
-        height: 50px;
-        width: 50px;
+        width: auto;
+        height: auto;
+        max-height: 60px;
+        max-width: 60px;
         border-radius: 100%;
-        margin: 40px 50px;
+        margin: 8vh 4vw;
       }
 
       .mail-trust-h5 {
@@ -222,28 +222,24 @@
 
 
 
-      @media screen and (max-width: 768px) {
+      /* @media screen and (max-width: 768px) {
         .mail-asset-div {
           display: inline-block;
           height: 50px;
           width: 50px;
           border-radius: 100%;
-          /* border: 2px solid black; */
           margin: 40px 50px;
           text-align: center;
         }
-      }
+      } */
 
       @media screen and (max-width: 576px) {
         .mail-asset-div {
-          display: inline-block;
-          height: 40px;
-          width: 40px;
-          border-radius: 100%;
-          /* border: 2px solid black; */
-          margin: 40px 30px;
-          text-align: center;
+          max-height: 40px;
+          max-width: 40px;
+          margin: 6vh 4vw;
         }
+
 
         .mail-asset-h6 {
           font-size: 9px;
@@ -287,7 +283,7 @@
 
   <body>
 
-    <section class="mail-section ">
+    <section class="mail-section">
       <div class="mail-content-div">
         <div>
           <div class="mail-head">
