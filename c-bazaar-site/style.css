@@ -4,6 +4,10 @@
 	background-color: white;
 	margin: 100px auto;
 }
+
+.about-content-div {
+	padding: 0px 200px;
+}
 .about-h2 {
 	color: #20bf55;
 	font-weight: 700;
@@ -26,6 +30,18 @@
 	font-weight: 600;
 }
 
+@media screen and (max-width: 1100px) {
+	.about-content-div {
+		padding: 0px 100px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.about-content-div {
+		padding: 0px 10px;
+	}
+}
+
 /* credit score */
 
 .score-section {
@@ -41,8 +57,11 @@
 }
 
 .score-img-div img {
-	width: 100%;
+	width: 80%;
 	margin-top: 20px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .score-h2 {
 	font-size: 34px;
@@ -59,7 +78,7 @@
 }
 
 .score-sub-div {
-	padding-left: 50px;
+	padding-left: 100px;
 }
 
 .score-h6 {
@@ -76,8 +95,11 @@
 
 @media screen and (max-width: 1268px) {
 	.score-img-div img {
-		width: 100%;
-		margin-top: 20px;
+		width: 90%;
+		margin-top: 30px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	.score-h2 {
 		font-size: 28px;
@@ -110,6 +132,9 @@
 
 	.score-img-div img {
 		width: 70%;
+		position: static;
+		left: 0%;
+		transform: translateX(0%);
 	}
 	.score-h2 {
 		font-size: 24px;
@@ -132,7 +157,7 @@
 
 @media screen and (max-width: 576px) {
 	.score-img-div {
-		width: 90%;
+		width: 100%;
 		height: 100%;
 		margin-top: 0px;
 		display: flex;
@@ -171,9 +196,10 @@
 .card {
 	border: none !important;
 	width: 100%;
+	height: 190px;
 	border-radius: 18px !important;
 	background-color: #fff !important;
-	box-shadow: 0px 0px 32px 4px #f7f7f7;
+	box-shadow: 0px 0px 10px 3px #f7f7f7;
 }
 .card-img-div {
 	width: auto;
@@ -183,8 +209,8 @@
 }
 
 .card-img {
-	width: 100%;
-	height: 100%;
+	width: 50px;
+	height: 50px;
 }
 
 .card-text {
@@ -365,6 +391,7 @@
 	padding: 8px 16px;
 	text-decoration: none;
 	transition: background-color .3s;
+	border-radius: 50%;
 }
 
 /* Style the active/current link */
@@ -377,6 +404,7 @@
 /* Add a grey background color on mouse-over */
 .pagination a:hover:not(.active) {
 	background-color: #ddd;
+	border-radius: 50%;
 }
 
 /* footer */
@@ -386,6 +414,7 @@
 .footer-section {
 	background-color: #f8f8fa;
 	padding: 0px 0 0px 0px;
+	max-width: 100% !important;
 }
 .footer-div-form {
 	display: flex;
@@ -397,12 +426,13 @@
 	margin-right: 10px;
 	border: 2px solid black;
 	border-radius: 5px;
+	padding: 2px 5px;
 }
 
 .footer-input::placeholder {
 	font-size: 10px;
-	margin-bottom: 1px;
 	font-weight: 600;
+	color: #20bf55;
 }
 
 .footer-btn {
@@ -429,6 +459,11 @@
 	font-size: 13px;
 	margin-bottom: 7px;
 	font-weight: 500;
+}
+
+.footer-content-p:hover {
+	color: #3c3c3c;
+	text-decoration: underline;
 }
 
 .footer-logo-div {
@@ -673,6 +708,11 @@
 	font-weight: 500;
 	color: #646464;
 	margin-bottom: 0px;
+}
+
+.footer-policy-h6:hover {
+	color: #646464;
+	cursor: pointer;
 }
 
 .footer-policy-span {
