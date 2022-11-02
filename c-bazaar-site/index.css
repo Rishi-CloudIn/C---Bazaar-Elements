@@ -132,6 +132,7 @@ nav {
 	top: 0%;
 	padding: 20px 0px;
 	z-index: 50;
+	background-color: white;
 	transition: 0.3s;
 }
 .nav_bg {
