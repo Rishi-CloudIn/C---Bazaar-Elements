@@ -1,0 +1,138 @@
+.signin-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../C-fin/img/Circle-01.svg");
+  background-size: auto 100%;
+  background-position-x: left;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.signin-div-1 {
+  position: absolute;
+  top: 60%;
+  left: 3%;
+  transform: translate(-5%, -60%);
+}
+
+.signin-logo-div {
+  width: auto;
+  height: auto;
+  max-width: 180px;
+  max-height: 100px;
+  margin-left: 40px;
+}
+
+.signin-logo-div img {
+  width: 100%;
+  height: auto;
+}
+.swiper {
+  width: 300px;
+  height: 50px;
+}
+
+.signin-swiper-p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.signin-div-2 {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  transform: translate(15%, -40%);
+  width: auto;
+  height: auto;
+  max-width: 450px;
+  max-height: auto;
+}
+
+.signin-h2 {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.signin-h6-2 {
+  color: #bbbb;
+  font-size: medium;
+}
+
+@media screen and (max-width: 1200px) {
+  .signin-div-2 {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    transform: translate(10%, -40%);
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: auto;
+  }
+
+  .signin-h2 {
+    font-size: 27px;
+    font-weight: 700;
+  }
+
+  .signin-h6-2 {
+    color: #bbbb;
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 992px) {
+  .signin-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../C-fin/img/lines.svg");
+    background-size: 100% 100vh;
+    /* background-position-x: ; */
+    background-repeat: no-repeat;
+  }
+
+  .signin-div-1 {
+    display: none;
+  }
+  .signin-div-2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    max-height: auto;
+  }
+
+  .signin-h2 {
+    font-size: 27px;
+    font-weight: 700;
+  }
+
+  .signin-h6-2 {
+    color: #bbbb;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .signin-div-2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .signin-div-2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 80%;
+    height: auto;
+  }
+}
