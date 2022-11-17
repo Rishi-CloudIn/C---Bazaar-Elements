@@ -49,10 +49,16 @@
                       />
                       <input
                         #hiddenfileinput
+                        formControlName="name"
                         (change)="onChange($event)"
                         accept="image/png, image/jpeg, image/jpg, image/webp"
                         type="file"
                       />
+                      <small
+                        *ngIf="validateProfile('name')"
+                        class="form-element-hint"
+                        >*Please enter valid Name.</small
+                      >
                     </a>
                   </div>
                   <div class="form-input-div">
@@ -97,12 +103,12 @@
                     <input
                       type="text"
                       class="form-input form-input-date"
-                      formControlName="dob"
+                      formControlName="dateOfBirth"
                     />
                     <small
-                      *ngIf="validateProfile('dob')"
+                      *ngIf="validateProfile('dateOfBirth')"
                       class="form-element-hint"
-                      >*Please pick valid DOB .</small
+                      >*Please pick valid Date of Birth.</small
                     >
                   </div>
 
@@ -128,8 +134,14 @@
                       type="text"
                       [value]="personalData.mobileNumber"
                       class="form-input"
+                      formControlName="mobileNumber"
                       disabled
                     />
+                    <small
+                      *ngIf="validateProfile('mobileNumber')"
+                      class="form-element-hint"
+                      >*Please enter valid Mobile Number.</small
+                    >
                   </div>
 
                   <div class="form-input-div">
@@ -137,11 +149,15 @@
                     <input
                       type="text"
                       class="form-input"
-                      pattern=""
                       [ngModelOptions]="{ standalone: true }"
-                      [(ngModel)]="pincode"
                       [disabled]="!edit"
+                      formControlName="addressLine"
                     />
+                    <small
+                      *ngIf="validateProfile('addressLine')"
+                      class="form-element-hint"
+                      >*Please enter Valid Address.</small
+                    >
                   </div>
                 </div>
               </div>
@@ -150,18 +166,99 @@
               <div class="col-md-6 col-12">
                 <div class="profile-form-content">
                   <div class="form-input-div">
+                    <label class="form-input-label">LOCALITY</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      formControlName="locality"
+                      [disabled]="!edit"
+                    />
+                    <small
+                      *ngIf="validateProfile('locality')"
+                      class="form-element-hint"
+                      >*Please Enter Valid Locality.</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">CITY</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      formControlName="city"
+                      [ngModelOptions]="{ standalone: true }"
+                      [disabled]="!edit"
+                    />
+                    <small
+                      *ngIf="validateProfile('city')"
+                      class="form-element-hint"
+                      >*Please Enter Valid city.</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">LANDMARK</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      formControlName="landmark"
+                      [disabled]="!edit"
+                    />
+                    <small
+                      *ngIf="validateProfile('landmark')"
+                      class="form-element-hint"
+                      >*Please Enter Valid Landmark.</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">STATE</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      formControlName="state"
+                      [disabled]="!edit"
+                    />
+                    <small
+                      *ngIf="validateProfile('state')"
+                      class="form-element-hint"
+                      >*Please Enter Valid state.</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
                     <label class="form-input-label">PINCODE</label>
                     <input
                       type="text"
                       class="form-input"
                       [ngModelOptions]="{ standalone: true }"
-                      [(ngModel)]="pincode"
+                      formControlName="pincode"
                       [disabled]="!edit"
                     />
+                    <small
+                      *ngIf="validateProfile('pincode')"
+                      class="form-element-hint"
+                      >*Please Enter Valid pincode.</small
+                    >
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-12">
+              <!-- <div class="col-md-6 col-12">
                 <div class="profile-form-content">
                   <div class="form-input-div">
                     <label class="form-input-label">PINCODE</label>
@@ -174,63 +271,7 @@
                     />
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="profile-form-content">
-                  <div class="form-input-div">
-                    <label class="form-input-label">PINCODE</label>
-                    <input
-                      type="text"
-                      class="form-input"
-                      [ngModelOptions]="{ standalone: true }"
-                      [(ngModel)]="pincode"
-                      [disabled]="!edit"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="profile-form-content">
-                  <div class="form-input-div">
-                    <label class="form-input-label">PINCODE</label>
-                    <input
-                      type="text"
-                      class="form-input"
-                      [ngModelOptions]="{ standalone: true }"
-                      [(ngModel)]="pincode"
-                      [disabled]="!edit"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="profile-form-content">
-                  <div class="form-input-div">
-                    <label class="form-input-label">PINCODE</label>
-                    <input
-                      type="text"
-                      class="form-input"
-                      [ngModelOptions]="{ standalone: true }"
-                      [(ngModel)]="pincode"
-                      [disabled]="!edit"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="profile-form-content">
-                  <div class="form-input-div">
-                    <label class="form-input-label">PINCODE</label>
-                    <input
-                      type="text"
-                      class="form-input"
-                      [ngModelOptions]="{ standalone: true }"
-                      [(ngModel)]="pincode"
-                      [disabled]="!edit"
-                    />
-                  </div>
-                </div>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -249,29 +290,19 @@
               <div class="col-md-6 col-12">
                 <div class="profile-form-content">
                   <div class="form-input-div">
-                    <label class="form-input-label">OCCUPATION TYPE</label>
-                    <select
-                      id="cars"
-                      name="cars"
-                      class="form-input-select"
-                      [ngModelOptions]="{ standalone: true }"
-                      [(ngModel)]="type"
-                      [disabled]="!edit"
-                    >
-                      <option value="1">Salaried</option>
-                      <option value="2">Self - Business</option>
-                    </select>
-                  </div>
-
-                  <div class="form-input-div">
-                    <label class="form-input-label">MONTHLY INCOME</label>
+                    <label class="form-input-label">DSA CODE</label>
                     <input
                       type="text"
                       class="form-input"
                       [ngModelOptions]="{ standalone: true }"
-                      [(ngModel)]="amount"
                       [disabled]="!edit"
+                      formControlName="dsa"
                     />
+                    <small
+                      *ngIf="validateProfile('dsa')"
+                      class="form-element-hint"
+                      >*Please Enter Valid dsa code.</small
+                    >
                   </div>
                 </div>
               </div>
@@ -279,25 +310,209 @@
               <div class="col-md-6 col-12">
                 <div class="profile-form-content">
                   <div class="form-input-div">
-                    <label class="form-input-label">ORGANIZATION NAME</label>
+                    <label class="form-input-label">PROFILE</label>
+                    <select
+                      id="cars"
+                      name="cars"
+                      class="form-input-select"
+                      formControlName="profile"
+                      [ngModelOptions]="{ standalone: true }"
+                      [disabled]="!edit"
+                    >
+                      <option value="1">Salaried</option>
+                      <option value="2">Self - Business</option>
+                    </select>
+                    <small
+                      *ngIf="validateProfile('profile')"
+                      class="form-element-hint"
+                      >*Please Enter Valid profile.</small
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">SETUP</label>
                     <select
                       id="cars"
                       name="cars"
                       class="form-input-select"
                       [ngModelOptions]="{ standalone: true }"
-                      [(ngModel)]="organization"
                       [disabled]="!edit"
+                      formControlName="setup"
                     >
-                      <option selected>
-                        {{ professionalData.organizationName }}
-                      </option>
-                      <option
-                        value="{{ item.name }}"
-                        *ngFor="let item of orgList; let i = index"
-                      >
-                        {{ item.name }}
-                      </option>
+                      <option value="1">Salaried</option>
+                      <option value="2">Self - Business</option>
                     </select>
+                    <small
+                      *ngIf="validateProfile('setup')"
+                      class="form-element-hint"
+                      >*Please Enter Valid setup.</small
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">PRODUCT</label>
+                    <select
+                      id="cars"
+                      name="cars"
+                      class="form-input-select"
+                      [ngModelOptions]="{ standalone: true }"
+                      [disabled]="!edit"
+                      formControlName="productType"
+                    >
+                      <option value="1">Salaried</option>
+                      <option value="2">Self - Business</option>
+                    </select>
+                    <small
+                      *ngIf="validateProfile('productType')"
+                      class="form-element-hint"
+                      >*Please Enter Valid Product.</small
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">SOURCE</label>
+                    <select
+                      id="cars"
+                      name="cars"
+                      class="form-input-select"
+                      [ngModelOptions]="{ standalone: true }"
+                      [disabled]="!edit"
+                      formControlName="source"
+                    >
+                      <option value="1">Salaried</option>
+                      <option value="2">Self - Business</option>
+                    </select>
+                    <small
+                      *ngIf="validateProfile('source')"
+                      class="form-element-hint"
+                      >*Please Enter Valid source.</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-form-div">
+            <div class="profile-form-head">
+              <div class="profile-form-head-img-div">
+                <img
+                  src="../../../../assets/img/Profile/Professional Details.svg"
+                  class="profile-form-head-img"
+                />
+              </div>
+              <h4 class="profile-form-head-h4">Account Details</h4>
+            </div>
+
+            <div class="row profile-form-content-1">
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">ACCOUNT HOLDER NAME</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [disabled]="!edit"
+                      formControlName="accountName"
+                    />
+                    <small
+                      *ngIf="validateProfile('accountName')"
+                      class="form-element-hint"
+                      >*Please Enter Valid Account Name.</small
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">BANK NAME</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [disabled]="!edit"
+                      formControlName="accountBank"
+                    />
+                    <small
+                      *ngIf="validateProfile('accountBank')"
+                      class="form-element-hint"
+                      >*Please Enter Valid Bank Name.</small
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">BRANCH NAME</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [disabled]="!edit"
+                      formControlName="accountBranch"
+                    />
+                    <small
+                      *ngIf="validateProfile('accountBranch')"
+                      class="form-element-hint"
+                      >*Please Enter Valid Branch Name.</small
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">ACCOUNT NUMBER</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [disabled]="!edit"
+                      formControlName="accountNumber"
+                    />
+                    <small
+                      *ngIf="validateProfile('accountNumber')"
+                      class="form-element-hint"
+                      >*Please Enter Valid Account Number.</small
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">IFSC CODE</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [disabled]="!edit"
+                      formControlName="ifsc"
+                    />
+                    <small
+                      *ngIf="validateProfile('ifsc')"
+                      class="form-element-hint"
+                      >*Please Enter Valid IFSC code.</small
+                    >
                   </div>
                 </div>
               </div>
