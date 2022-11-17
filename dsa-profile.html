@@ -1,0 +1,314 @@
+<app-dsa-sidenav></app-dsa-sidenav>
+
+<section class="side-nav-div mb-5" *ngIf="!isLoading">
+  <div class="container">
+    <div class="profile-section">
+      <div class="profile-section-card">
+        <form id="login-form" [formGroup]="profileForm">
+          <div class="profile-title-div">
+            <h5 class="profile-title" *ngIf="!edit">Profile</h5>
+            <h5 class="profile-title" *ngIf="edit">Edit Profile</h5>
+
+            <div class="profile-edit" (click)="enableEdit()">
+              <div class="profile-edit-img-div">
+                <img
+                  src="../../../../assets/img/Profile/Edit.svg"
+                  class="porfile-edit-icon"
+                  width="16px"
+                />
+              </div>
+              <h6 class="profile-edit-h6">Edit</h6>
+            </div>
+          </div>
+
+          <div class="profile-form-div">
+            <div class="profile-form-head">
+              <div class="profile-form-head-img-div">
+                <img
+                  src="../../../../assets/img/Profile/Personal Details.svg"
+                  class="profile-form-head-img"
+                  width="25px"
+                />
+              </div>
+              <h4 class="profile-form-head-h4">Personal Details</h4>
+            </div>
+
+            <div class="row profile-form-content-1">
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="profile-form-img-div">
+                    <img src="{{ dpUrl }}" class="profile-form-img" />
+                    <a
+                      class="image-upload wrapper"
+                      id="file"
+                      (click)="hiddenfileinput.click()"
+                    >
+                      <img
+                        src="../../../../assets/img/Profile/Camera.svg"
+                        class="profile-form-img-icon firstDiv"
+                      />
+                      <input
+                        #hiddenfileinput
+                        (change)="onChange($event)"
+                        accept="image/png, image/jpeg, image/jpg, image/webp"
+                        type="file"
+                      />
+                    </a>
+                  </div>
+                  <div class="form-input-div">
+                    <label class="form-input-label">PAN CARD</label>
+                    <input
+                      type="text"
+                      [value]="personalData.panCard"
+                      class="form-input"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">FULL NAME</label>
+                    <div class="form-input-group d-flex flex-column">
+                      <!-- <select name="name_with_initials">
+                        <option selected>Mr.</option>
+                        <option>Mrs.</option>
+                        <option>Miss.</option>
+                      </select> -->
+                      <input
+                        id="name"
+                        type="text"
+                        class="form-input"
+                        formControlName="name"
+                        [(ngModel)]="name"
+                        [disabled]="!edit"
+                      />
+                      <small
+                        *ngIf="validateProfile('name')"
+                        class="form-element-hint"
+                        >*Please enter valid Name.</small
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form-input-div">
+                    <label class="form-input-label">DATE OF BIRTH</label>
+                    <input
+                      type="text"
+                      class="form-input form-input-date"
+                      formControlName="dob"
+                    />
+                    <small
+                      *ngIf="validateProfile('dob')"
+                      class="form-element-hint"
+                      >*Please pick valid DOB .</small
+                    >
+                  </div>
+
+                  <div class="form-input-div">
+                    <label class="form-input-label">EMAIL ID</label>
+
+                    <input
+                      type="text"
+                      [disabled]="!edit"
+                      formControlName="email"
+                      class="form-input"
+                    />
+                    <small
+                      *ngIf="validateProfile('email')"
+                      class="form-element-hint"
+                      >*Please enter valid Mail ID.</small
+                    >
+                  </div>
+
+                  <div class="form-input-div">
+                    <label class="form-input-label">MOBILE NUMBER</label>
+                    <input
+                      type="text"
+                      [value]="personalData.mobileNumber"
+                      class="form-input"
+                      disabled
+                    />
+                  </div>
+
+                  <div class="form-input-div">
+                    <label class="form-input-label">Address Line</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      pattern=""
+                      [ngModelOptions]="{ standalone: true }"
+                      [(ngModel)]="pincode"
+                      [disabled]="!edit"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row profile-form-content-1">
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">PINCODE</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [(ngModel)]="pincode"
+                      [disabled]="!edit"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">PINCODE</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [(ngModel)]="pincode"
+                      [disabled]="!edit"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">PINCODE</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [(ngModel)]="pincode"
+                      [disabled]="!edit"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">PINCODE</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [(ngModel)]="pincode"
+                      [disabled]="!edit"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">PINCODE</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [(ngModel)]="pincode"
+                      [disabled]="!edit"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">PINCODE</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [(ngModel)]="pincode"
+                      [disabled]="!edit"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-form-div">
+            <div class="profile-form-head">
+              <div class="profile-form-head-img-div">
+                <img
+                  src="../../../../assets/img/Profile/Professional Details.svg"
+                  class="profile-form-head-img"
+                />
+              </div>
+              <h4 class="profile-form-head-h4">Professional Details</h4>
+            </div>
+
+            <div class="row profile-form-content-1">
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">OCCUPATION TYPE</label>
+                    <select
+                      id="cars"
+                      name="cars"
+                      class="form-input-select"
+                      [ngModelOptions]="{ standalone: true }"
+                      [(ngModel)]="type"
+                      [disabled]="!edit"
+                    >
+                      <option value="1">Salaried</option>
+                      <option value="2">Self - Business</option>
+                    </select>
+                  </div>
+
+                  <div class="form-input-div">
+                    <label class="form-input-label">MONTHLY INCOME</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      [ngModelOptions]="{ standalone: true }"
+                      [(ngModel)]="amount"
+                      [disabled]="!edit"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-12">
+                <div class="profile-form-content">
+                  <div class="form-input-div">
+                    <label class="form-input-label">ORGANIZATION NAME</label>
+                    <select
+                      id="cars"
+                      name="cars"
+                      class="form-input-select"
+                      [ngModelOptions]="{ standalone: true }"
+                      [(ngModel)]="organization"
+                      [disabled]="!edit"
+                    >
+                      <option selected>
+                        {{ professionalData.organizationName }}
+                      </option>
+                      <option
+                        value="{{ item.name }}"
+                        *ngFor="let item of orgList; let i = index"
+                      >
+                        {{ item.name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button *ngIf="edit" (click)="submit()" class="profile-submit-button">
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
