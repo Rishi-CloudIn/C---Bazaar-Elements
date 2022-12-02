@@ -40,14 +40,6 @@
         text-decoration: none;
       }
 
-      .g-bazaar-h5 {
-        color: #20bf55;
-      }
-
-      .g-bazaar-logo {
-        width: 100%;
-      }
-
       .g-bazaar-asset-div {
         display: inline-block;
         height: 70px;
@@ -104,7 +96,7 @@
       }
 
       .g-bazaar-body-li {
-        margin-top: 14px !important;
+        margin-top: 10px !important;
         font-weight: 500;
         color: #6c757d;
       }
@@ -159,28 +151,28 @@
 
       @media screen and (min-width: 576px) {
         .g-bazaar-section {
-          max-width: 540px !important;
+          max-width: 500px !important;
           margin: 0 auto !important;
         }
       }
 
       @media screen and (min-width: 768px) {
         .g-bazaar-section {
-          max-width: 720px !important;
+          max-width: 600px !important;
           margin: 0 auto !important ;
         }
       }
 
       @media screen and (min-width: 992px) {
         .g-bazaar-section {
-          max-width: 960px !important;
+          max-width: 700px !important;
           margin: 0 auto !important;
         }
       }
 
       @media screen and (min-width: 1200px) {
         .g-bazaar-section {
-          max-width: 1140px !important;
+          max-width: 800px !important;
           margin: 0 auto !important;
         }
       }
@@ -221,11 +213,6 @@
           margin: 25px !important;
         }
 
-        .g-bazaar-head {
-          display: flex !important;
-          flex-direction: column-reverse !important;
-        }
-
         .g-bazaar-logo-div {
           margin: 20px auto !important;
           display: flex !important;
@@ -240,25 +227,47 @@
   <body>
     <section class="g-bazaar-section">
       <div class="g-bazaar-content-div" style="padding: 10px">
+        <div
+          style="
+            width: auto;
+            height: auto;
+            max-width: 150px;
+            max-height: auto;
+            margin: 20px auto;
+          "
+          class="g-bazaar-head-1 g-bazaar-logo-div"
+        >
+          <img
+            src="https://cbazzar.cloudinlabs.com/storage/icons/C_Bazaar.svg"
+            alt="logo"
+            class="g-bazaar-logo"
+          />
+        </div>
         <div>
-          <div
-            class="g-bazaar-head"
-            style="display: flex; justify-content: space-between"
-          >
+          <div>
             <div class="g-bazaar-head-1">
-              <h3 style="font-size: 20px; font-weight: 700">Hi,</h3>
-              <h3 style="font-size: 20px; font-weight: 700; color: #20bf55">
+              <!-- <h3 style="font-size: 20px; font-weight: 700">Hi,</h3> -->
+              <h3
+                style="
+                  font-size: 22px;
+                  font-weight: 800;
+                  color: #20bf55;
+                  text-align: center;
+                "
+              >
                 Welcome to G-Bazaar
               </h3>
             </div>
-            <div class="g-bazaar-head-1 g-bazaar-logo-div">
+            <!-- <div class="g-bazaar-head-1 g-bazaar-logo-div">
               <img
                 src="https://cbazzar.cloudinlabs.com/storage/icons/C_Bazaar.svg"
                 alt="logo"
                 class="g-bazaar-logo"
               />
-            </div>
+            </div> -->
           </div>
+
+          {!! $mailData !!}
 
           <div class="g-bazaar-body">
             <h5 class="h5-fw-bold" style="font-size: 20px; font-weight: 700">
@@ -266,8 +275,8 @@
             </h5>
             <ul class="g-bazaar-body-ul">
               <li class="g-bazaar-body-li">
-                Let's admit, the adoption of Technology in Finance management
-                through G-bazaar app
+                "Let's admit, the adoption of Technology in Finance management
+                through G-bazaar app"
               </li>
               <li class="g-bazaar-body-li">
                 The G-bazaar app is an User-Friendly Finance Management app for
@@ -320,7 +329,7 @@
             <div style="display: flex; justify-content: center">
               <div class="g-bazaar-asset-div">
                 <img
-                  src="./mail_assets/Business Loan.svg"
+                  src="{{ asset('storage/templateImage/Business_Loan.png') }}"
                   alt="img"
                   class="g-bazaar-asset"
                 />
@@ -329,7 +338,7 @@
 
               <div class="g-bazaar-asset-div">
                 <img
-                  src="./mail_assets/Educational Loan.svg"
+                  src="{{ asset('storage/templateImage/Educational_Loan.png') }}"
                   alt="img"
                   class="g-bazaar-asset"
                 />
@@ -338,7 +347,7 @@
 
               <div class="g-bazaar-asset-div">
                 <img
-                  src="./mail_assets/Gold Loan.svg"
+                  src="{{ asset('storage/templateImage/Gold_Loan.png') }}"
                   alt="img"
                   class="g-bazaar-asset"
                 />
@@ -347,7 +356,7 @@
 
               <div class="g-bazaar-asset-div">
                 <img
-                  src="./mail_assets/Home Loan.svg"
+                  src="{{ asset('storage/templateImage/Home_Loan.png') }}"
                   alt="img"
                   class="g-bazaar-asset"
                 />
@@ -361,16 +370,16 @@
             >
               <div class="g-bazaar-asset-div">
                 <img
-                  src="./mail_assets/Insurance.svg"
+                  src="{{ asset('storage/templateImage/Credit_Card.png') }}"
                   alt="img"
                   class="g-bazaar-asset"
                 />
-                <h6 class="g-bazaar-asset-h6">Insurance loan</h6>
+                <h6 class="g-bazaar-asset-h6">Credit Card</h6>
               </div>
 
               <div class="g-bazaar-asset-div">
                 <img
-                  src="./mail_assets/Personal Loan.svg"
+                  src="{{ asset('storage/templateImage/Personal_Loan.png') }}"
                   alt="img"
                   class="g-bazaar-asset"
                 />
@@ -379,11 +388,20 @@
 
               <div class="g-bazaar-asset-div">
                 <img
-                  src="./mail_assets/Vehicle loan.svg"
+                  src="{{ asset('storage/templateImage/Vehicle_Loan.png') }}"
                   alt="img"
                   class="g-bazaar-asset"
                 />
                 <h6 class="g-bazaar-asset-h6">Vehicle loan</h6>
+              </div>
+
+              <div class="g-bazaar-asset-div">
+                <img
+                  src="{{ asset('storage/templateImage/Investment.png') }}"
+                  alt="img"
+                  class="g-bazaar-asset"
+                />
+                <h6 class="g-bazaar-asset-h6">Investment</h6>
               </div>
             </div>
           </div>
@@ -403,58 +421,56 @@
 
             <hr />
 
-            <div
-              class="social-icon-main-div"
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-top: 40px;
-              "
-            >
+            <div>
               <h5
                 style="
                   font-size: 18px;
                   font-weight: 700;
                   color: #6c757d;
                   margin-right: 30px;
+                  text-align: center;
                 "
               >
-                Stay connect with us :
+                Stay connect with us
               </h5>
               <div
                 class="social-icons"
-                style="display: flex; justify-content: start; margin-top: 7px"
+                style="width: 145px; max-width: 145px; margin: 0px auto"
               >
-                <div class="social-icon-div">
-                  <a
-                    href="https://www.facebook.com/CreditBazzar/"
-                    target="_blank"
-                  >
-                    <img
-                      src="./mail_assets/social_icons/Facebook.svg"
-                      alt="logo"
-                      class="social-icon"
-                    />
-                  </a>
-                </div>
-                <div class="social-icon-div">
-                  <a href="https://www.instagram.com/cbaz_aar/" target="_blank">
-                    <img
-                      src="./mail_assets/social_icons/Instagram.svg"
-                      alt="logo"
-                      class="social-icon"
-                    />
-                  </a>
-                </div>
-                <div class="social-icon-div">
-                  <a href="#">
-                    <img
-                      src="./mail_assets/social_icons/LinkedIn.svg"
-                      alt="logo"
-                      class="social-icon"
-                    />
-                  </a>
+                <div style="display: flex; margin: 0px auto">
+                  <div class="social-icon-div">
+                    <a
+                      href="https://www.facebook.com/CreditBazzar/"
+                      target="_blank"
+                    >
+                      <img
+                        src="{{ asset('storage/templateImage/fb.png') }}"
+                        alt="logo"
+                        class="social-icon"
+                      />
+                    </a>
+                  </div>
+                  <div class="social-icon-div">
+                    <a
+                      href="https://www.instagram.com/cbaz_aar/"
+                      target="_blank"
+                    >
+                      <img
+                        src="{{ asset('storage/templateImage/insta.png') }}"
+                        alt="logo"
+                        class="social-icon"
+                      />
+                    </a>
+                  </div>
+                  <div class="social-icon-div">
+                    <a href="#">
+                      <img
+                        src="{{ asset('storage/templateImage/linkedIn.png') }}"
+                        alt="logo"
+                        class="social-icon"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
