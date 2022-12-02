@@ -119,11 +119,6 @@
         font-size: medium;
       }
 
-      .g-bazaar-asset-body {
-        display: flex;
-        justify-content: center;
-      }
-
       .g-bazaar-asset-div {
         text-align: center;
         display: inline-block;
@@ -155,13 +150,6 @@
         margin-top: 10px;
       }
 
-      .social-icon-main-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 40px;
-      }
-
       .social-h5 {
         font-size: 18px;
         font-weight: 700;
@@ -169,36 +157,31 @@
         margin-right: 30px;
       }
 
-      .social-icons {
-        display: flex;
-        justify-content: start;
-      }
-
       @media screen and (min-width: 576px) {
         .g-bazaar-section {
           max-width: 540px !important;
-          margin: 0 auto;
+          margin: 0 auto !important;
         }
       }
 
       @media screen and (min-width: 768px) {
         .g-bazaar-section {
           max-width: 720px !important;
-          margin: 0 auto;
+          margin: 0 auto !important ;
         }
       }
 
       @media screen and (min-width: 992px) {
         .g-bazaar-section {
           max-width: 960px !important;
-          margin: 0 auto;
+          margin: 0 auto !important;
         }
       }
 
       @media screen and (min-width: 1200px) {
         .g-bazaar-section {
           max-width: 1140px !important;
-          margin: 0 auto;
+          margin: 0 auto !important;
         }
       }
 
@@ -215,42 +198,38 @@
 
       @media screen and (max-width: 576px) {
         .g-bazaar-asset-div {
-          max-height: 40px;
-          max-width: 40px;
-          margin: 6vh 4vw;
+          max-height: 40px !important;
+          max-width: 40px !important;
+          margin: 6vh 4vw !important;
         }
 
         .g-bazaar-asset-h6 {
-          font-size: 9px;
-          text-align: center;
-          margin-top: 10px;
-          font-weight: 500;
+          font-size: 9px !important;
+          text-align: center !important;
+          margin-top: 10px !important;
+          font-weight: 500 !important;
         }
 
         .social-icon-main-div {
-          display: flex;
-          flex-direction: column;
-        }
-
-        .social-icons {
-          margin-top: 10px;
+          display: flex !important;
+          flex-direction: column !important;
         }
 
         /* new */
         .g-bazaar-content-div {
-          padding: 0px;
-          margin: 25px;
+          padding: 0px !important;
+          margin: 25px !important;
         }
 
         .g-bazaar-head {
-          display: flex;
-          flex-direction: column-reverse;
+          display: flex !important;
+          flex-direction: column-reverse !important;
         }
 
         .g-bazaar-logo-div {
-          margin: 20px auto;
-          display: flex;
-          align-items: center;
+          margin: 20px auto !important;
+          display: flex !important;
+          align-items: center !important;
         }
       }
     </style>
@@ -338,7 +317,7 @@
             <h5 class="h5-fw-bold" style="font-size: 20px; font-weight: 700">
               App is Featured with all kind of loan options
             </h5>
-            <div class="g-bazaar-asset-body">
+            <div style="display: flex; justify-content: center">
               <div class="g-bazaar-asset-div">
                 <img
                   src="./mail_assets/Business Loan.svg"
@@ -376,7 +355,10 @@
               </div>
             </div>
 
-            <div class="g-bazaar-asset-body">
+            <div
+              class="g-bazaar-asset-body"
+              style="display: flex; justify-content: center"
+            >
               <div class="g-bazaar-asset-div">
                 <img
                   src="./mail_assets/Insurance.svg"
@@ -421,9 +403,29 @@
 
             <hr />
 
-            <div class="social-icon-main-div">
-              <h5 class="social-h5">Stay connect with us :</h5>
-              <div class="social-icons">
+            <div
+              class="social-icon-main-div"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 40px;
+              "
+            >
+              <h5
+                style="
+                  font-size: 18px;
+                  font-weight: 700;
+                  color: #6c757d;
+                  margin-right: 30px;
+                "
+              >
+                Stay connect with us :
+              </h5>
+              <div
+                class="social-icons"
+                style="display: flex; justify-content: start; margin-top: 7px"
+              >
                 <div class="social-icon-div">
                   <a
                     href="https://www.facebook.com/CreditBazzar/"
